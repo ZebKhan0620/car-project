@@ -1,0 +1,40 @@
+{
+    "sections": {
+        "about_services": "会社概要・サービス",
+        "quick_tools": "クイックツール",
+        "car_services": "車両サービス",
+        "stay_updated": "最新情報"
+    },
+    "links": {
+        "about_us": "会社概要",
+        "import_services": "輸入サービス",
+        "partnership_options": "パートナーシップ",
+        "consultation": "ご相談",
+        "import_calculator": "輸入費用計算",
+        "feasibility_analysis": "実現可能性分析",
+        "partnership_calculator": "パートナーシップ計算",
+        "schedule_meeting": "ミーティング予約",
+        "featured_cars": "おすすめ車両",
+        "search_cars": "車両検索",
+        "add_listing": "車両登録",
+        "my_favorites": "お気に入り"
+    },
+    "newsletter": {
+        "email_placeholder": "メールアドレスを入力",
+        "subscribe_button": "ニュースレター登録"
+    },
+    "actions": {
+        "back_to_top": "トップへ戻る"
+    },
+    "copyright": "© {year} CarMarket. All rights reserved.",
+    "social": {
+        "facebook_aria": "Facebookでフォロー",
+        "twitter_aria": "Twitterでフォロー",
+        "whatsapp_aria": "WhatsAppでお問い合わせ"
+    },
+    "brands": {
+        "toyota_alt": "トヨタ",
+        "honda_alt": "ホンダ",
+        "mercedes_alt": "メルセデス"
+    }
+} 

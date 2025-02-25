@@ -1,0 +1,189 @@
+{
+    "items": [
+        {
+            "title": "toyota Corolla 2008",
+            "brand": "toyota",
+            "model": "Corolla",
+            "year": 2008,
+            "mileage": 1200,
+            "price": 12000,
+            "body_type": "Coupe",
+            "transmission": "Manual",
+            "fuel_type": "Diesel",
+            "color": "silver",
+            "location": "philippines",
+            "description": "good",
+            "features": [
+                "ABS",
+                "Backup Camera",
+                "Heated Seats",
+                "Power Seats",
+                "Bluetooth",
+                "Apple CarPlay",
+                "Android Auto",
+                "Premium Sound System",
+                "Wireless Charging"
+            ],
+            "specifications": {
+                "engine_size": "1300",
+                "horsepower": "1200",
+                "doors": "3",
+                "seats": "6"
+            },
+            "condition": "Excellent",
+            "contact_name": "CarVerse",
+            "contact_email": "carversedrivelink@gmail.com",
+            "contact_phone": "09898765421",
+            "contact_method": "email",
+            "warranty": true,
+            "negotiable": true,
+            "seller_notes": "",
+            "images": [
+                "car_67bb3c4908152.jpg",
+                "car_67bb3c4b49a0e.jpg",
+                "car_67bb3c4d95bd7.jpg"
+            ],
+            "status": "inactive",
+            "user_id": 1,
+            "id": "CAR67bb3c7c03240",
+            "created_at": "2025-02-23 15:19:24",
+            "updated_at": "2025-02-23 15:21:33"
+        },
+        {
+            "title": "honda Pilot 2008",
+            "brand": "honda",
+            "model": "Pilot",
+            "year": 2008,
+            "mileage": 1200,
+            "price": 12000,
+            "body_type": "Hatchback",
+            "transmission": "Automatic",
+            "fuel_type": "Diesel",
+            "color": "red",
+            "location": "dubai",
+            "description": "good",
+            "features": [
+                "Lane Departure Warning",
+                "Air Conditioning",
+                "Apple CarPlay",
+                "Wireless Charging"
+            ],
+            "specifications": {
+                "engine_size": "1300",
+                "horsepower": "1200",
+                "doors": "2",
+                "seats": "5"
+            },
+            "condition": "Good",
+            "contact_name": "CarVerse",
+            "contact_email": "carversedrivelink@gmail.com",
+            "contact_phone": "09898765421",
+            "contact_method": "both",
+            "warranty": false,
+            "negotiable": true,
+            "seller_notes": "",
+            "images": [
+                "car_67bb561ed2c9e.jpg",
+                "car_67bb5621922ce.jpg"
+            ],
+            "status": "active",
+            "user_id": 1,
+            "id": "CAR67bb5636eab46",
+            "created_at": "2025-02-23 17:09:10",
+            "updated_at": "2025-02-23 17:09:10"
+        },
+        {
+            "title": "nissan Corolla 2017",
+            "brand": "nissan",
+            "model": "Corolla",
+            "year": 2017,
+            "mileage": 1200,
+            "price": 1200,
+            "body_type": "Coupe",
+            "transmission": "Automatic",
+            "fuel_type": "Hybrid",
+            "color": "silver",
+            "location": "dubai",
+            "description": "good",
+            "features": [
+                "ABS",
+                "Parking Sensors",
+                "Leather Seats",
+                "Power Windows",
+                "Android Auto",
+                "Premium Sound System"
+            ],
+            "specifications": {
+                "engine_size": "1300",
+                "horsepower": "1200",
+                "doors": "4",
+                "seats": "6"
+            },
+            "condition": "Like New",
+            "contact_name": "CarVerse",
+            "contact_email": "carversedrivelink@gmail.com",
+            "contact_phone": "09898765421",
+            "contact_method": "phone",
+            "warranty": true,
+            "negotiable": false,
+            "seller_notes": "",
+            "images": [
+                "car_67bb565410c0d.jpg",
+                "car_67bb56561986c.jpg",
+                "car_67bb5659381e7.jpg",
+                "car_67bb565ad9198.jpg"
+            ],
+            "status": "active",
+            "user_id": 1,
+            "id": "CAR67bb566dbb325",
+            "created_at": "2025-02-23 17:10:05",
+            "updated_at": "2025-02-23 17:10:05"
+        },
+        {
+            "title": "honda CR-V 2007",
+            "brand": "honda",
+            "model": "CR-V",
+            "year": 2007,
+            "mileage": 12000,
+            "price": 1200,
+            "body_type": "Sedan",
+            "transmission": "CVT",
+            "fuel_type": "Electric",
+            "color": "black",
+            "location": "dubai",
+            "description": "cool",
+            "features": [
+                "ABS",
+                "Backup Camera",
+                "Air Conditioning",
+                "Cruise Control",
+                "Android Auto"
+            ],
+            "specifications": {
+                "engine_size": "1300",
+                "horsepower": "1400",
+                "doors": "4",
+                "seats": "4"
+            },
+            "condition": "New",
+            "contact_name": "CarVerse",
+            "contact_email": "carversedrivelink@gmail.com",
+            "contact_phone": "09898765421",
+            "contact_method": "phone",
+            "warranty": true,
+            "negotiable": false,
+            "seller_notes": "",
+            "images": [
+                "car_67bb56870d9a1.jpg",
+                "car_67bb56898e98f.jpg",
+                "car_67bb568bcabda.jpg",
+                "car_67bb568dd0c20.jpg"
+            ],
+            "status": "active",
+            "user_id": 1,
+            "id": "CAR67bb56a61444c",
+            "created_at": "2025-02-23 17:11:02",
+            "updated_at": "2025-02-23 17:11:02"
+        }
+    ]
+}

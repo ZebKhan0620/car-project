@@ -1,0 +1,878 @@
+{
+    "common": {
+        "welcome": "カーマーケット",
+        "language": "言語",
+        "login": "ログイン",
+        "register": "登録",
+        "logout": "ログアウト",
+        "profile": "プロフィール",
+        "settings": "設定",
+        "browse": "車両を検索",
+        "calculators": "計算機",
+        "home": "ホーム",
+        "services": "サービス",
+        "contact": "お問い合わせ",
+        "new": "新着",
+        "meta": {
+            "title": "カーマーケット",
+            "description": "カーマーケット - あなたの理想の車を見つけましょう"
+        },
+        "yes": "はい",
+        "no": "いいえ",
+        "not_available": "未定",
+        "date_format": "Y年n月j日",
+        "time_format": "H:i"
+    },
+    "hero": {
+        "title": "理想の車を見つけよう",
+        "description": "数千台の車、トラック、SUVから選べます。あなたのスタイルと予算に合った完璧な車を見つけましょう。",
+        "search": {
+            "placeholder": "ブランド、モデル、キーワードで検索",
+            "button": "検索",
+            "all_locations": "すべての地域"
+        },
+        "popular": {
+            "label": "人気の検索:",
+            "no_searches": "まだ検索履歴がありません"
+        },
+        "stats": {
+            "listings": {
+                "title": "総掲載数",
+                "value": "2,500+"
+            },
+            "dealers": {
+                "title": "アクティブディーラー",
+                "value": "150+"
+            },
+            "customers": {
+                "title": "満足顧客数",
+                "value": "10K+"
+            }
+        },
+        "car_card": {
+            "featured": "おすすめ",
+            "available": "即時利用可能",
+            "view_details": "詳細を見る",
+            "no_cars": {
+                "title": "車両が見つかりません",
+                "description": "検索条件を変更してお試しください"
+            }
+        }
+    },
+    "cars": {
+        "search": "車両検索",
+        "search_placeholder": "車を検索...",
+        "featured": "注目の車",
+        "latest": "最新リスト",
+        "add_listing": "出品する",
+        "my_listings": "自分の出品",
+        "drafts": "下書き",
+        "favorites": "お気に入り",
+        "import": "輸入車",
+        "export": "輸出",
+        "inspection": "車両検査",
+        "browse": "車両を検索",
+        "calculators": "計算機",
+        "sell": "売却",
+        "price": "価格",
+        "year": "年式",
+        "mileage": "走行距離",
+        "condition": "状態",
+        "location": "場所",
+        "warranty": "保証付き",
+        "transmission": "トランスミッション",
+        "gallery_image": {
+            "title": "車両画像",
+            "thumbnail": "サムネイル",
+            "previous": "前の画像",
+            "next": "次の画像",
+            "rotate": "画像を回転",
+            "fullscreen": "全画面表示切替",
+            "no_images": "画像がありません"
+        },
+        "listed_time": "{time}に掲載",
+        "view_count": "閲覧数 {count}回",
+        "key_features": "主な特徴",
+        "description": "説明",
+        "no_description": "説明はありません",
+        "view_full_details": "詳細を見る",
+        "featured_cars": {
+            "title": "おすすめ車両",
+            "subtitle": "厳選されたプレミアム車両をご覧ください",
+            "view_toggle": {
+                "grid": "グリッド表示",
+                "list": "リスト表示"
+            },
+            "filters": {
+                "brand": "ブランド",
+                "all_brands": "すべてのブランド",
+                "price_range": "価格帯",
+                "min_price": "最小",
+                "max_price": "最大",
+                "year_range": "年式",
+                "year_from": "開始年",
+                "year_to": "終了年",
+                "condition": "状態",
+                "any_condition": "すべての状態",
+                "reset": "リセット",
+                "apply": "フィルターを適用"
+            },
+            "compare": {
+                "title": "車両を比較",
+                "add_car": "車両を追加",
+                "clear_all": "すべてクリア",
+                "compare_now": "今すぐ比較",
+                "max_cars": "最大3台まで比較できます",
+                "quick_view": "クイックビュー",
+                "save": "保存",
+                "remove": "削除"
+            },
+            "market_value": {
+                "title": "市場価格比較",
+                "vs_market": "市場比",
+                "price_difference": "この車両は類似の出品と比べて{status}で価格が{percentage}%です",
+                "at_market_price": "市場平均価格です"
+            },
+            "stats": {
+                "showing_results": "全{total}件中{count}件のおすすめ車両を表示中",
+                "browse_all": "すべての車両を見る",
+                "no_results_query": "\"{query}\"に一致する車両は見つかりませんでした",
+                "no_listings": "現在、利用可能な車両はありません。",
+                "found_listings": "{count}件の車両が見つかりました",
+                "item_sold": "この車両は売約済みです"
+            },
+            "sort": {
+                "latest": "最新",
+                "price_low": "価格: 安い順",
+                "price_high": "価格: 高い順",
+                "year_new": "年式: 新しい順",
+                "popularity": "人気順"
+            },
+            "dropdowns": {
+                "all_brands": "すべてのブランド",
+                "all_models": "すべてのモデル",
+                "select_brand": "ブランドを選択",
+                "select_model": "モデルを選択",
+                "model_placeholder": "先にブランドを選択してください"
+            },
+            "conditions": {
+                "new": "新車",
+                "like_new": "新車同様",
+                "excellent": "極上",
+                "good": "良好",
+                "fair": "普通",
+                "poor": "要修理",
+                "any": "すべての状態"
+            }
+        },
+        "compare": {
+            "no_cars_selected": "比較する車両が選択されていません",
+            "no_valid_cars": "比較可能な車両が見つかりません",
+            "key_differences": "主な違い",
+            "no_differences": "大きな違いは見つかりません",
+            "overview": "概要",
+            "vehicle": "車両",
+            "market_value": "市場価値",
+            "market_average": "市場平均",
+            "condition_score": "状態スコア",
+            "basic_information": "基本情報",
+            "body_type": "ボディタイプ",
+            "seating_capacity": "乗車定員",
+            "seats": "人乗り",
+            "color": "カラー",
+            "engine_performance": "エンジン・性能",
+            "engine": "エンジン",
+            "horsepower": "馬力",
+            "fuel_type": "燃料タイプ",
+            "fuel_economy": "燃費",
+            "drive_type": "駆動方式",
+            "dimensions_capacity": "寸法・容量",
+            "cargo_space": "荷室容量",
+            "length": "全長",
+            "width": "全幅",
+            "height": "全高",
+            "wheelbase": "ホイールベース",
+            "safety_features": "安全装備",
+            "features_equipment": "装備・機能",
+            "additional_information": "追加情報",
+            "vin": "車台番号",
+            "registration": "登録",
+            "last_service": "最終整備",
+            "differences": {
+                "price": "価格差: ${difference}",
+                "mileage": "走行距離差: {difference} km",
+                "year_range": "年式: {from}年 - {to}年"
+            },
+            "safety": {
+                "abs": "ABS（アンチロックブレーキシステム）",
+                "airbags": "エアバッグ",
+                "traction_control": "トラクションコントロール",
+                "stability_control": "横滑り防止装置",
+                "parking_sensors": "パーキングセンサー",
+                "backup_camera": "バックカメラ",
+                "lane_departure_warning": "車線逸脱警報"
+            },
+            "features": {
+                "navigation": "ナビゲーション",
+                "bluetooth": "Bluetooth",
+                "cruise_control": "クルーズコントロール",
+                "climate_control": "エアコン",
+                "leather_seats": "レザーシート",
+                "sunroof": "サンルーフ",
+                "power_seats": "パワーシート",
+                "heated_seats": "シートヒーター",
+                "power_windows": "パワーウィンドウ",
+                "navigation_system": "ナビゲーションシステム",
+                "android_auto": "Android Auto",
+                "apple_carplay": "Apple CarPlay",
+                "wireless_charging": "ワイヤレス充電"
+            }
+        },
+        "features": {
+            "ABS": "ABS（アンチロックブレーキシステム）",
+            "Airbags": "エアバッグ",
+            "Traction Control": "トラクションコントロール",
+            "Stability Control": "横滑り防止装置",
+            "Parking Sensors": "パーキングセンサー",
+            "Backup Camera": "バックカメラ",
+            "Lane Departure Warning": "車線逸脱警報",
+            "Air Conditioning": "エアコン",
+            "Leather Seats": "レザーシート",
+            "Heated Seats": "シートヒーター",
+            "Sunroof": "サンルーフ",
+            "Power Windows": "パワーウィンドウ",
+            "Power Seats": "パワーシート",
+            "Cruise Control": "クルーズコントロール",
+            "Bluetooth": "Bluetooth",
+            "Navigation System": "ナビゲーションシステム",
+            "USB Ports": "USBポート",
+            "Apple CarPlay": "Apple CarPlay",
+            "Android Auto": "Android Auto",
+            "Premium Sound System": "プレミアムサウンドシステム",
+            "Wireless Charging": "ワイヤレス充電"
+        },
+        "safety": {
+            "abs": "ABS（アンチロックブレーキシステム）",
+            "airbags": "エアバッグ",
+            "traction_control": "トラクションコントロール",
+            "stability_control": "横滑り防止装置",
+            "parking_sensors": "パーキングセンサー",
+            "backup_camera": "バックカメラ",
+            "lane_departure_warning": "車線逸脱警報"
+        },
+        "specifications": {
+            "engine_size": "エンジン排気量",
+            "horsepower": "馬力",
+            "transmission": "トランスミッション",
+            "fuel_type": "燃料タイプ",
+            "fuel_economy": "燃費",
+            "drive_type": "駆動方式",
+            "seating_capacity": "乗車定員",
+            "cargo_space": "荷室容量",
+            "dimensions": {
+                "length": "全長",
+                "width": "全幅",
+                "height": "全高",
+                "wheelbase": "ホイールベース"
+            }
+        },
+        "status": {
+            "title": "ステータス",
+            "active": "出品中",
+            "pending": "確認中",
+            "sold": "売約済",
+            "inactive": "非公開"
+        },
+        "contact_info": {
+            "title": "連絡先情報",
+            "name": "名前",
+            "phone": "電話番号",
+            "email": "メールアドレス",
+            "preferred_method": "希望連絡方法"
+        },
+        "share": {
+            "title": "共有",
+            "copy_link": "リンクをコピー",
+            "copy_link_tooltip": "URLをクリップボードにコピー",
+            "social_media": "SNS",
+            "whatsapp": "WhatsAppで共有",
+            "facebook": "Facebookで共有",
+            "twitter": "Twitterで共有",
+            "whatsapp_text": "カーマーケットで見つけた {title} をチェック: {url}",
+            "twitter_text": "カーマーケットで素晴らしい {title} を見つけました！ {url}",
+            "copied": "リンクをコピーしました！"
+        },
+        "schedule_viewing": {
+            "title": "内覧予約",
+            "button": "内覧を予約",
+            "meeting_type": "ミーティングタイプ",
+            "date": "希望日",
+            "time": "希望時間",
+            "select_time": "時間枠を選択",
+            "notes": "追加メモ",
+            "submit": "予約する",
+            "select_car": "車両を選択",
+            "select_car_placeholder": "内覧する車両を選択してください",
+            "meeting_types": {
+                "video_call_zoom": "Zoomビデオ通話",
+                "video_call_skype": "Skypeビデオ通話",
+                "video_call_gmeet": "Google Meet",
+                "dealership_visit": "現地での内覧"
+            },
+            "status": {
+                "scheduled": "予約済み",
+                "pending": "確認中",
+                "cancelled": "キャンセル済み",
+                "completed": "完了"
+            },
+            "join_meeting": "ミーティングに参加",
+            "details": "詳細",
+            "reschedule": "日程変更",
+            "cancel": "キャンセル",
+            "car_not_available": "この車両は現在利用できません",
+            "success": {
+                "virtual": "オンライン商談の予約が完了しました！詳細はメールをご確認ください。",
+                "in_person": "現車確認の予約が完了しました！確認メールをご確認ください。"
+            }
+        },
+        "contact": {
+            "title": "連絡先",
+            "call_seller": "電話で問い合わせ",
+            "email_seller": "メールで問い合わせ",
+            "contact_seller": "出品者に連絡"
+        },
+        "warranty_active": "保証付き",
+        "basic_information": "基本情報",
+        "vehicle_details": "車両詳細",
+        "brand": "ブランド",
+        "model": "モデル",
+        "body_type": "ボディタイプ",
+        "transmission": "トランスミッション",
+        "fuel_type": "燃料タイプ",
+        "color": "カラー",
+        "select_year": "年式を選択",
+        "select_body_type": "ボディタイプを選択",
+        "select_transmission": "トランスミッションを選択",
+        "select_fuel_type": "燃料タイプを選択",
+        "select_color": "カラーを選択",
+        "body_types": {
+            "Sedan": "セダン",
+            "SUV": "SUV",
+            "Coupe": "クーペ",
+            "Hatchback": "ハッチバック",
+            "Truck": "トラック",
+            "Van": "バン"
+        },
+        "transmissions": {
+            "Automatic": "オートマチック",
+            "Manual": "マニュアル",
+            "CVT": "CVT"
+        },
+        "fuel_types": {
+            "Petrol": "ガソリン",
+            "Diesel": "ディーゼル",
+            "Hybrid": "ハイブリッド",
+            "Electric": "電気"
+        },
+        "colors": {
+            "white": "ホワイト",
+            "black": "ブラック",
+            "silver": "シルバー",
+            "red": "レッド",
+            "blue": "ブルー"
+        },
+        "vehicle_images": {
+            "title": "車両画像",
+            "dropzone": {
+                "message": "ファイルをドロップするか、クリックしてアップロード",
+                "max_files": "最大ファイル数に達しました",
+                "file_too_big": "ファイルサイズが大きすぎます",
+                "invalid_type": "無効なファイル形式です"
+            }
+        },
+        "location_and_price": {
+            "title": "所在地と価格",
+            "select_location": "所在地を選択",
+            "price_usd": "価格 (USD)"
+        },
+        "locations": {
+            "tokyo": "東京",
+            "osaka": "大阪",
+            "nagoya": "名古屋",
+            "fukuoka": "福岡",
+            "sapporo": "札幌",
+            "sendai": "仙台",
+            "yokohama": "横浜",
+            "kobe": "神戸",
+            "dubai": "ドバイ",
+            "japan": "日本",
+            "philippines": "フィリピン"
+        },
+        "description_section": {
+            "title": "説明",
+            "placeholder": "車両の詳細な説明を入力してください...",
+            "required": "説明*"
+        },
+        "specifications_section": {
+            "title": "仕様",
+            "select_placeholder": "{field}を選択",
+            "fields": {
+                "engine_size": {
+                    "label": "エンジン排気量",
+                    "placeholder": "エンジン排気量を入力"
+                },
+                "horsepower": {
+                    "label": "馬力",
+                    "placeholder": "馬力を入力"
+                },
+                "doors": {
+                    "label": "ドア数",
+                    "placeholder": "ドア数を選択"
+                },
+                "seats": {
+                    "label": "シート数",
+                    "placeholder": "シート数を選択"
+                }
+            }
+        },
+        "features_section": {
+            "title": "装備",
+            "categories": {
+                "safety": "安全装備",
+                "comfort": "快適装備",
+                "technology": "テクノロジー"
+            }
+        },
+        "condition_section": {
+            "title": "状態",
+            "select_condition": "状態を選択",
+            "conditions": {
+                "New": "新車",
+                "Like New": "新車同様",
+                "Excellent": "極上",
+                "Good": "良好",
+                "Fair": "普通"
+            }
+        },
+        "contact_section": {
+            "title": "連絡先情報",
+            "fields": {
+                "name": {
+                    "label": "お名前",
+                    "required": "お名前*"
+                },
+                "phone": {
+                    "label": "電話番号",
+                    "required": "電話番号"
+                },
+                "email": {
+                    "label": "メールアドレス",
+                    "required": "メールアドレス*"
+                },
+                "preferred_method": {
+                    "label": "希望連絡方法",
+                    "options": {
+                        "email": "メール",
+                        "phone": "電話",
+                        "both": "両方"
+                    }
+                }
+            }
+        },
+        "additional_options": {
+            "title": "追加情報",
+            "warranty": "保証付き",
+            "negotiable": "価格相談可",
+            "seller_notes": {
+                "label": "販売者メモ",
+                "placeholder": "車両に関する追加メモを入力してください..."
+            }
+        },
+        "manage_listing": "出品を管理",
+        "search_advanced": "詳細検索を試す",
+        "add_first_listing": "最初の出品を登録",
+        "favorites_empty": {
+            "title": "お気に入りはまだありません",
+            "description": "車両を閲覧してお気に入りに追加しましょう！"
+        },
+        "favorites_added_date": "お気に入り追加日",
+        "favorites_added_recently": "最近",
+        "browse_cars": "車両を閲覧",
+        "select_car": "車両を選択",
+        "select_car_placeholder": "内覧する車両を選択してください"
+    },
+    "forms": {
+        "submit": "送信",
+        "cancel": "キャンセル",
+        "save": "保存",
+        "delete": "削除",
+        "edit": "編集",
+        "search": "検索",
+        "close": "閉じる"
+    },
+    "messages": {
+        "success": "操作が正常に完了しました",
+        "error": "エラーが発生しました",
+        "confirm_delete": "本当に削除しますか？",
+        "no_results": "結果が見つかりません",
+        "loading": "読み込み中...",
+        "car_not_found": "車両が見つかりません",
+        "error": "車両情報の読み込み中にエラーが発生しました"
+    },
+    "about_us": {
+        "hero": {
+            "title": "信頼できる車のマーケットプレイス",
+            "description": "車の愛好家や購入者のための最高のプラットフォームへようこそ。信頼できるパートナーと業界の専門家に支えられ、車の輸入、評価、取引のシームレスな体験を提供します。",
+            "buttons": {
+                "learn_more": "詳細を見る",
+                "contact_us": "お問い合わせ"
+            }
+        },
+        "stats": {
+            "cars_listed": {
+                "number": "1000+",
+                "label": "掲載車両数"
+            },
+            "active_users": {
+                "number": "5000+",
+                "label": "アクティブユーザー"
+            },
+            "success_deals": {
+                "number": "2000+",
+                "label": "取引成立数"
+            },
+            "trusted_partners": {
+                "number": "50+",
+                "label": "提携パートナー"
+            }
+        },
+        "services": {
+            "import": {
+                "title": "輸入サービス",
+                "description": "総合的なコスト分析と市場洞察に基づく、車両輸入の専門的なガイダンスを提供します。"
+            },
+            "partnership": {
+                "title": "パートナーシップ",
+                "description": "信頼できるパートナーネットワークに参加し、包括的なサポートでビジネスを成長させましょう。"
+            },
+            "scheduling": {
+                "title": "ミーティング予約",
+                "description": "車両の内覧やビジネスミーティングのための簡単で効率的な予約システム。"
+            },
+            "valuation": {
+                "title": "車両評価",
+                "description": "市場に基づく正確な車両評価サービスで、適切な判断をサポートします。"
+            }
+        },
+        "why_choose_us": {
+            "title": "選ばれる理由",
+            "features": {
+                "trusted_platform": {
+                    "title": "信頼性の高いプラットフォーム",
+                    "description": "認証済みディーラーと安全な取引による、信頼と透明性を重視したプラットフォーム。"
+                },
+                "expert_knowledge": {
+                    "title": "専門知識",
+                    "description": "業界の専門家による価値ある洞察とガイダンスを提供。"
+                },
+                "support": {
+                    "title": "24時間サポート",
+                    "description": "お客様のニーズに24時間体制で対応するカスタマーサポート。"
+                }
+            }
+        }
+    },
+    "testimonials": {
+        "section": {
+            "title": "お客様の声",
+            "subtitle": "実際のお客様からの貴重なご意見"
+        },
+        "items": [
+            {
+                "content": "車の輸入プロセスは非常にスムーズでした。チームは複雑に見えることを簡単かつ分かりやすく、一つ一つ丁寧にガイドしてくれました。この経験に大変満足しています。",
+                "author": "サラ・チェン",
+                "role": "TechFlow プロダクトマネージャー",
+                "image_alt": "サラ・チェンの testimonial"
+            },
+            {
+                "content": "このプラットフォームで理想の車を見つけることができました。評価ツールは正確で、購入プロセスは透明性が高かったです。お客様満足度へのチームの献身的な姿勢は本当に素晴らしいものでした。",
+                "author": "マイケル・ロドリゲス",
+                "role": "テクノロジー企業役員",
+                "image_alt": "マイケル・ロドリゲスの testimonial"
+            },
+            {
+                "content": "パートナーシッププログラムは期待を上回るものでした。当社のディーラーシップは参加以来、大きな成長を遂げています。プラットフォームの革新的な機能とユーザーフレンドリーなインターフェースは、使用する喜びがあります。",
+                "author": "エミリー・ワトソン",
+                "role": "カーディーラー",
+                "image_alt": "エミリー・ワトソンの testimonial"
+            }
+        ],
+        "navigation": {
+            "previous": "前のお客様の声",
+            "next": "次のお客様の声"
+        }
+    },
+    "trusted_brands": {
+        "section": {
+            "title": "信頼されるブランドたち",
+            "subtitle": "スムーズなスクロールとホバーエフェクトで、パートナーシップの力を示す信頼できるブランドロゴの連続的な表示"
+        }
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "subtitle": "車両やサービスについてご質問がありますか？お気軽にお問い合わせください。",
+        "form": {
+            "fields": {
+                "name": "お名前",
+                "email": "メールアドレス",
+                "phone": "電話番号（任意）",
+                "subject": "件名",
+                "message": "メッセージ"
+            },
+            "buttons": {
+                "send": "送信する",
+                "sending": "送信中..."
+            },
+            "validation": {
+                "name": {
+                    "required": "お名前を入力してください",
+                    "max_length": "お名前は100文字以内で入力してください"
+                },
+                "email": {
+                    "required": "メールアドレスを入力してください",
+                    "invalid": "有効なメールアドレスを入力してください"
+                },
+                "phone": {
+                    "invalid": "有効な電話番号を入力してください"
+                },
+                "subject": {
+                    "required": "件名を入力してください",
+                    "max_length": "件名は200文字以内で入力してください"
+                },
+                "message": {
+                    "required": "メッセージを入力してください",
+                    "max_length": "メッセージは3000文字以内で入力してください"
+                },
+                "contact_purpose": {
+                    "invalid": "有効なお問い合わせ目的を選択してください"
+                }
+            }
+        },
+        "purposes": {
+            "general": {
+                "title": "一般的なお問い合わせ",
+                "description": "会社やサービスに関するご質問"
+            },
+            "sales": {
+                "title": "購入に関するお問い合わせ",
+                "description": "車両の購入やリースについて"
+            },
+            "support": {
+                "title": "カスタマーサポート",
+                "description": "既存のサービスや製品のサポート"
+            },
+            "partnership": {
+                "title": "ビジネスパートナーシップ",
+                "description": "協業やビジネス機会について"
+            }
+        },
+        "business_hours": {
+            "title": "営業時間",
+            "status": {
+                "open": "営業中",
+                "closed": "営業時間外"
+            },
+            "days": {
+                "monday": "月曜日",
+                "tuesday": "火曜日",
+                "wednesday": "水曜日",
+                "thursday": "木曜日",
+                "friday": "金曜日",
+                "saturday": "土曜日",
+                "sunday": "日曜日"
+            }
+        },
+        "quick_contact": {
+            "title": "クイック連絡",
+            "call_now": "電話をかける",
+            "email_us": "メールを送る"
+        },
+        "location": {
+            "title": "所在地",
+            "get_directions": "道順を表示",
+            "copy_address": "住所をコピー",
+            "address_copied": "住所をクリップボードにコピーしました！"
+        },
+        "social": {
+            "title": "ソーシャルメディア",
+            "platforms": {
+                "facebook": "Facebookでフォロー",
+                "twitter": "Twitterでフォロー",
+                "instagram": "Instagramでフォロー",
+                "linkedin": "LinkedInでつながる"
+            }
+        },
+        "messages": {
+            "success": "お問い合わせありがとうございます。近日中にご連絡させていただきます。",
+            "error": "申し訳ありません。メッセージの送信に問題が発生しました。もう一度お試しください。",
+            "rate_limit": "送信回数が多すぎます。しばらくしてからもう一度お試しください。",
+            "system_error": "システムエラーが発生しました。しばらくしてからもう一度お試しください。"
+        }
+    },
+    "footer": {
+        "sections": {
+            "about_services": "会社概要・サービス",
+            "quick_tools": "クイックツール",
+            "car_services": "車両サービス",
+            "stay_updated": "最新情報"
+        },
+        "links": {
+            "about_us": "会社概要",
+            "import_services": "輸入サービス",
+            "partnership_options": "パートナーシップ",
+            "consultation": "ご相談",
+            "import_calculator": "輸入費用計算",
+            "feasibility_analysis": "実現可能性分析",
+            "partnership_calculator": "パートナーシップ計算",
+            "schedule_meeting": "ミーティング予約",
+            "featured_cars": "おすすめ車両",
+            "search_cars": "車両検索",
+            "add_listing": "車両登録",
+            "my_favorites": "お気に入り"
+        },
+        "newsletter": {
+            "email_placeholder": "メールアドレスを入力",
+            "subscribe_button": "ニュースレター登録"
+        },
+        "actions": {
+            "back_to_top": "トップへ戻る"
+        },
+        "copyright": "© {year} CarMarket. All rights reserved.",
+        "social": {
+            "facebook_aria": "Facebookでフォロー",
+            "twitter_aria": "Twitterでフォロー",
+            "whatsapp_aria": "WhatsAppでお問い合わせ"
+        },
+        "brands": {
+            "toyota_alt": "トヨタ",
+            "honda_alt": "ホンダ",
+            "mercedes_alt": "メルセデス"
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "ログイン",
+            "heading": "アカウントにログイン",
+            "email_label": "メールアドレス",
+            "password_label": "パスワード",
+            "submit_button": "ログイン",
+            "forgot_password_link": "パスワードをお忘れの方",
+            "register_link": "アカウントをお持ちでない方はこちら",
+            "errors": {
+                "too_many_attempts": "ログイン試行回数が多すぎます。%s後にもう一度お試しください。",
+                "fields_required": "メールアドレスとパスワードを入力してください",
+                "invalid_credentials": "メールアドレスまたはパスワードが正しくありません",
+                "user_not_found": "このメールアドレスのユーザーが見つかりません。先に登録してください。",
+                "invalid_credentials_warning": "メールアドレスまたはパスワードが正しくありません。警告：アカウントがロックされるまであと%d回試行できます",
+                "account_locked": "ログイン試行回数が多すぎるため、アカウントがロックされました。%s後にもう一度お試しください"
+            }
+        },
+        "verification": {
+            "title": "メール認証",
+            "check": {
+                "heading": "メール認証",
+                "instruction": "以下のリンクをクリックしてメールアドレスを認証してください：",
+                "verify_button": "メールアドレスを認証",
+                "link_label": "リンク",
+                "no_link_error": "認証リンクが見つかりません。もう一度登録をお試しください。",
+                "already_verified": "すでに認証済みの方はログインへお進みください。",
+                "login_button": "ログインへ"
+            },
+            "success": {
+                "heading": "メール認証が完了しました！",
+                "message": "メールアドレスの認証が完了しました。ログインしてご利用いただけます。",
+                "login_button": "ログインする"
+            },
+            "errors": {
+                "no_token": "認証トークンが見つかりません",
+                "invalid_token": "無効な認証トークンです",
+                "verification_failed": "メール認証に失敗しました"
+            }
+        },
+        "register": {
+            "title": "アカウント登録",
+            "heading": "新規登録",
+            "name_label": "お名前",
+            "email_label": "メールアドレス",
+            "password_label": "パスワード",
+            "confirm_password_label": "パスワード（確認）",
+            "profile_image_label": "プロフィール画像（任意）",
+            "image_requirements": "最大サイズ：2MB。対応形式：JPG、PNG",
+            "submit_button": "登録する",
+            "login_link": "すでにアカウントをお持ちの方はこちら"
+        },
+        "errors": {
+            "token_missing": "セキュリティトークンがありません",
+            "invalid_token": "無効なセキュリティトークンです",
+            "all_fields_required": "すべての項目を入力してください",
+            "passwords_mismatch": "パスワードが一致しません",
+            "invalid_image_type": "無効なファイル形式です。JPGまたはPNGのみ対応しています。",
+            "image_too_large": "ファイルサイズが大きすぎます。最大2MBまでです。",
+            "image_upload_failed": "プロフィール画像のアップロードに失敗しました。",
+            "registration_failed": "登録に失敗しました",
+            "login_required": "続行するにはログインしてください",
+            "access_denied": "アクセスが拒否されました。最初にログインしてください",
+            "404": {
+                "title": "404 - ページが見つかりません",
+                "heading": "ページが見つかりません",
+                "message": "このページにアクセスするにはログインが必要です",
+                "back_home": "ホームページへ戻る"
+            },
+            "general": {
+                "something_wrong": "エラーが発生しました",
+                "try_again": "しばらくしてからもう一度お試しください",
+                "contact_support": "問題が解決しない場合は、サポートまでお問い合わせください"
+            },
+            "unauthorized": {
+                "title": "未認証アクセス",
+                "message": "このページにアクセスするにはログインが必要です",
+                "login_button": "ログインページへ"
+            }
+        },
+        "success": {
+            "registration_complete": "登録が完了しました！メールアドレスの確認をお願いします。"
+        },
+        "2fa": {
+            "setup": {
+                "title": "二要素認証の設定",
+                "heading": "二要素認証の設定",
+                "scan_qr": "1. 認証アプリでQRコードをスキャンしてください",
+                "manual_code": "手動入力コード：",
+                "manual_hint": "QRコードをスキャンできない場合は、上記のコードを認証アプリに手動で入力してください",
+                "enter_code": "2. アプリに表示される6桁のコードを入力してください：",
+                "verification_code": "認証コード",
+                "verify_button": "認証して2FAを有効化",
+                "success": "二要素認証が正常に有効化されました！",
+                "backup_codes": "バックアップコード",
+                "backup_instruction": "これらのバックアップコードを安全な場所に保存してください。各コードは1回のみ使用できます。",
+                "download_codes": "バックアップコードをダウンロード",
+                "after_backup": "バックアップコードを保存した後",
+                "continue": "ダッシュボードへ進む"
+            },
+            "verify": {
+                "title": "二要素認証の確認",
+                "heading": "二要素認証",
+                "instruction": "認証アプリに表示される6桁のコードを入力してください",
+                "code_label": "認証コード",
+                "verify_button": "認証する",
+                "use_backup": "バックアップコードを使用",
+                "backup_instruction": "バックアップコードを入力してください",
+                "try_again": "もう一度試す",
+                "errors": {
+                    "code_required": "認証コードを入力してください",
+                    "invalid_code": "無効な認証コードです"
+                }
+            }
+        }
+    }
+} 

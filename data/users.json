@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "name": "CarVerse DriveLink",
+            "email": "carversedrivelink@gmail.com",
+            "password": "$2y$10$3yikYKRtB4om\/DVTCCH0sOYRciAfK\/jrC2ggzBy670Xy1HmT7004S",
+            "avatar": null,
+            "is_verified": true,
+            "verification_token": null,
+            "created_at": "2025-02-25 13:22:14",
+            "settings": {
+                "two_factor_enabled": true
+            },
+            "profile_image": "profile_67bdc40625b5a.jpg",
+            "id": 1,
+            "email_verified_at": "2025-02-25 13:22:29",
+            "two_factor_secret": "H24U5Z2RACDMDJR7",
+            "backup_codes": [
+                "887aac4e53200b6a56ab",
+                "a9ec3dc45ca08d49ef58",
+                "f93e5a6a4ce7a4aebca1",
+                "9d5548b5790d69b6e74f",
+                "fc88421e3389cb2dc5c6",
+                "9f21bb56956dcd265f19",
+                "130d1f49b9f383daf441",
+                "07ffb00ae4195b1e60ea"
+            ]
+        }
+    ]
+}

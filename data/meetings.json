@@ -1,0 +1,16 @@
+[
+    {
+        "car_id": "CAR67bb566dbb325",
+        "type": "video_call_zoom",
+        "scheduled_date": "2025-02-26",
+        "slot_id": "3",
+        "customer_name": "CarVerse DriveLink",
+        "customer_email": "carversedrivelink@gmail.com",
+        "notes": "",
+        "status": "scheduled",
+        "created_at": "2025-02-23 17:50:27",
+        "id": "meeting_67bb5fe304c7c",
+        "scheduled_time": "11:00 AM",
+        "join_url": "#"
+    }
+]

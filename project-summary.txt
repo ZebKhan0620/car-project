@@ -1,0 +1,2199 @@
+/project-root
+│
+├── /data
+│   ├── 2fa_secrets.json
+│   ├── calendar_slots.json
+│   ├── car_listings.json
+│   ├── contact_submissions.json
+│   ├── favorites.json
+│   ├── meetings.json
+│   ├── newsletter_subscribers.json
+│   ├── popular_searches.json
+│   ├── rate_limits.json
+│   ├── security_logs.json
+│   ├── security_notifications.json
+│   ├── sessions.json
+│   └── users.json
+│   └── user_activities.json
+│
+├── /logs
+│   ├── access.log
+│   ├── debug.log
+│   └── error.log
+│
+/public
+│
+├── /api
+│   ├── /2fa
+│   │   ├── setup.php
+│   │   └── verify-setup.php
+│   ├── /calculator
+│   │   ├── feasibility-analysis.php
+│   │   ├── feasibility.php
+│   │   ├── import-cost.php
+│   │   ├── partnership-cost.php
+│   │   └── partnership.php
+│   ├── /calendar
+│   │   └── slots.php
+│   ├── /meetings
+│   │   ├── cancel.php
+│   │   ├── details.php
+│   │   ├── reschedule.php
+│   │   ├── schedule.php
+│   │   └── user.php
+│   └── /newsletter
+│       └── subscribe.php
+│
+├── /assets
+│   ├── /images
+│   │   ├── /car-brands
+│   │   │   ├── audi.svg
+│   │   │   ├── bmw.svg
+│   │   │   ├── ford.svg
+│   │   │   ├── mercedes.svg
+│   │   │   └── toyota.svg
+│   │   └── /js
+│   │       ├── calendar.js
+│   │       ├── car-image-upload.js
+│   │       ├── car-model-selector.js
+│   │       └── meeting-actions.js
+│
+├── /auth
+│   └── verify-2fa.php
+│
+├── /cache
+│   ├── featured_cars.cache
+│   └── market_data.cache
+│
+├── /Components
+│   ├── /AboutUs
+│   │   └── AboutUs.php
+│   ├── /Cars
+│   │   ├── add-listing.php
+│   │   ├── add_favorite.php
+│   │   ├── ajax-search.php
+│   │   ├── compare-view.php
+│   │   ├── delete-image.php
+│   │   ├── favorites.php
+│   │   ├── featured-cars-search.php
+│   │   ├── hero-search.php
+│   │   ├── index.php
+│   │   ├── process-listing.php
+│   │   ├── quick-view.php
+│   │   ├── search.php
+│   │   ├── toggle-favorite.php
+│   │   ├── update-status.php
+│   │   ├── upload-images.php
+│   │   └── view.php
+│   ├── /Contact
+│   │   ├── contact-view.php
+│   │   ├── Contact.php
+│   │   ├── index.php
+│   │   └── submit.php
+│   ├── /FeaturedCars
+│   │   ├── FeaturedCars.php
+│   │   └── featured-cars.js
+│   ├── /Footer
+│   │   └── Footer.php
+│   ├── /Header
+│   │   └── Header.php
+│   ├── /Hero
+│   │   └── Hero.php
+│   ├── /Testimonials
+│   │   └── Testimonials.php
+│   └── /TrustedBrands
+│       └── TrustedBrands.php
+│
+├── /css
+│   ├── /components
+│   │   ├── footer.css
+│   │   ├── trusted-brands.css
+│   └── /dist
+│       └── styles.css
+│
+├── /js
+│   ├── /components
+│   │   ├── about-us.js
+│   │   ├── calculator.js
+│   │   ├── contact.js
+│   │   ├── favorites.js
+│   │   ├── feasibility-analysis.js
+│   │   ├── featured-cars.js
+│   │   ├── hero-search.js
+│   │   ├── image-loader.js
+│   │   ├── image-modal.js
+│   │   ├── image-slider.js
+│   │   ├── import-calculator.js
+│   │   ├── newsletter.js
+│   │   ├── partnership-calculator.js
+│   │   ├── quick-search.js
+│   │   ├── search-filter.js
+│   │   ├── testimonials.js
+│   │   └── trusted-brands.js
+│   └── /utils
+│       ├── api-helper.js
+│       └── error-handler.js
+│   ├── 2fa-setup.js
+│   ├── 2fa-verify.js
+│   ├── calculator.js
+│   ├── components.js
+│   ├── main.js
+│   ├── scripts.js
+│   └── verify-2fa.js
+│
+├── /pages
+│   ├── /calculators
+│   │   └── calculators.php
+│   ├── /login
+│   │   ├── email-verification.php
+│   │   ├── forgot-password.php
+│   │   ├── login.php
+│   │   ├── logout.php
+│   │   ├── resend-verification.php
+│   │   ├── reset-password.php
+│   │   └── verify-email.php
+│   └── /register
+│       └── register.php
+│
+└── /settings
+    ├── 2fa.php
+    ├── activity.php
+    ├── notifications.php
+    └── security.php
+
+├── dashboard.php
+└── index.php
+
+
+
+
+/src
+│
+├── bootstrap.php
+│
+├── /Calculator
+│   └── CostBreakdown.php
+│
+├── /Classes
+│   ├── /Auth
+│   │   ├── Authentication.php
+│   │   ├── CSRF.php
+│   │   ├── EmailVerification.php
+│   │   ├── PasswordReset.php
+│   │   ├── Session.php
+│   │   └── TwoFactorAuth.php
+│   │
+│   ├── /Cache
+│   │   └── CacheManager.php
+│   │
+│   ├── /Calculator
+│   │   └── /Business
+│   │       ├── CostBreakdown.php
+│   │       ├── CustomsDutyCalculator.php
+│   │       ├── FeasibilityAnalyzer.php
+│   │       ├── PartnershipCalculator.php
+│   │       └── ShippingCalculator.php
+│   │
+│   ├── /Cars
+│   │   ├── CarListing.php
+│   │   ├── ImageHandler.php
+│   │   ├── ImageUploader.php
+│   │   └── SearchFilter.php
+│   │
+│   ├── /Contact
+│   │   └── ContactStorage.php
+│   │
+│   ├── /Exceptions
+│   │   └── ValidationException.php
+│   │
+│   ├── /Meeting
+│   │   ├── Calendar.php
+│   │   ├── MeetingConfig.php
+│   │   ├── MeetingScheduler.php
+│   │   └── ValidationException.php
+│   │
+│   ├── /Middleware
+│   │   └── RateLimiter.php
+│   │
+│   ├── /Notifications
+│   │   └── SecurityNotification.php
+│   │
+│   ├── /Report
+│   │   └── CostReportGenerator.php
+│   │
+│   ├── /Search
+│   │   └── SearchTracker.php
+│   │
+│   ├── /Security
+│   │   ├── ActivityLogger.php
+│   │   ├── CSRF.php
+│   │   ├── RateLimiter.php
+│   │   ├── SecurityEvents.php
+│   │   ├── SecurityLogger.php
+│   │   ├── SecurityNotification.php
+│   │   └── TwoFactorAuth.php
+│   │
+│   ├── /Storage
+│   │   └── JsonStorage.php
+│   │
+│   ├── /User
+│   │   ├── Favorites.php
+│   │   ├── User.php
+│   │   └── UserProfile.php
+│   │
+│   ├── /Validation
+│   │   ├── RequestValidator.php
+│   │   └── Validation.php
+│   │
+│   └── /Models
+│       └── User.php
+│
+└── /Services
+    ├── CacheManager.php
+    ├── CacheManagerInterface.php
+    ├── EmailService.php
+    ├── EmailVerificationService.php
+    ├── ExchangeRateService.php
+    ├── ExchangeRateServiceInterface.php
+    ├── FeasibilityAnalyzer.php
+    ├── FileUploadService.php
+    ├── NotificationService.php
+    ├── PermissionService.php
+    ├── SecurityService.php
+    ├── SessionService.php
+    ├── TwoFactorAuth.php
+    ├── UserActivityLogger.php
+    ├── UserProfileService.php
+    └── ValidationService.php
+
+
+
+
+   /src
+   └── /Classes
+       └── /Language
+           ├── TranslationManager.php    # Main translation management class
+           └── LocaleResolver.php        # Handles locale detection/setting
+
+   /resources
+   └── /translations
+       ├── messages.en.yaml    # English translations
+       ├── messages.ja.yaml    # Japanese translations
+       └── validators.en.yaml  # Validation messages
+
+
+
+Project Structure Summary
+Data Storage: The project uses a /data directory to store various JSON files that represent different aspects of the application.
+User Management:
+Users: Contains user account information, including authentication details and profile data.
+2FA Secrets: Stores two-factor authentication secrets for enhanced security.
+Sessions: Manages active user sessions for tracking logged-in users.
+Car Listings:
+Car Listings: Contains detailed information about cars available for sale, including specifications and seller details.
+Favorites: Tracks user-favorited cars for easy access.
+Meetings: Manages scheduled meetings related to car listings.
+User Interaction:
+Contact Submissions: Stores inquiries from users, allowing for customer support and engagement.
+Newsletter Subscribers: Manages users who have opted in for newsletters.
+Security and Monitoring:
+Security Logs: Logs security-related events, such as login attempts and failures.
+Security Notifications: Stores notifications related to security events for user awareness.
+Rate Limits: Placeholder for managing API rate limits (currently empty).
+User Activities: Logs various user activities within the application for tracking and analytics.
+Calendar Management: Contains available time slots for scheduling meetings or appointments.
+Search Analytics: Tracks popular searches to understand user preferences and improve offerings.
+
+
+
+
+
+
+
+Access Log (logs/access.log)
+Content: Currently empty.
+Purpose: Typically used to log all incoming requests to the application, including details like request method, URL, response status, and timestamps. This log can help in monitoring user activity and diagnosing issues related to access patterns.
+Debug Log (logs/debug.log)
+Content:
+Logs multiple POST requests made to the application, specifically for subscribing to a newsletter.
+Each entry includes:
+Request Method: Indicates the type of HTTP request (e.g., POST).
+Raw Input: Shows the JSON payload sent with the request (e.g., email addresses).
+Decoded Data: Displays the parsed data from the raw input.
+Errors: Indicates that the email address is already subscribed, which is a recurring error in the logs.
+Stack Trace: Provides a stack trace for debugging purposes, showing where the error occurred in the code.
+Purpose: Useful for debugging issues related to user interactions, particularly for tracking errors and understanding the flow of data through the application.
+Error Log (logs/error.log)
+Content: Currently empty.
+Purpose: Typically used to log errors that occur during the execution of the application. This can include exceptions, failed operations, and other critical issues that need attention. An empty error log may indicate that no errors have occurred, or it may suggest that error logging is not functioning correctly.
+Summary of Findings
+The access.log and error.log files are currently empty, which may indicate that the application is running smoothly without access issues or errors, or that logging is not properly configured.
+The debug.log file shows repeated attempts to subscribe the same email address to a newsletter, resulting in errors due to the email already being subscribed. This suggests a need for better handling of duplicate subscriptions, possibly by providing user feedback or checking for existing subscriptions before attempting to add a new one.
+
+
+
+
+
+
+
+
+
+
+
+
+
+/public
+│
+└── /api
+    ├── /2fa
+    │   ├── setup.php
+    │   └── verify-setup.php
+    ├── /calculator
+    │   ├── feasibility-analysis.php
+    │   ├── feasibility.php
+    │   ├── import-cost.php
+    │   ├── partnership-cost.php
+    │   └── partnership.php
+    ├── /calendar
+    │   └── slots.php
+    ├── /meetings
+    │   ├── cancel.php
+    │   ├── details.php
+    │   ├── reschedule.php
+    │   ├── schedule.php
+    │   └── user.php
+    └── /newsletter
+        └── subscribe.php
+
+
+
+
+API Files Summary
+1. 2FA Setup (public/api/2fa/setup.php)
+Purpose: Handles the setup of two-factor authentication (2FA) for users.
+Key Features:
+Validates CSRF tokens.
+Checks if the user is authenticated.
+Sets up 2FA and returns the secret, backup codes, and a QR code URL.
+2FA Verify Setup (public/api/2fa/verify-setup.php)
+Purpose: Verifies the 2FA setup by checking the provided verification code.
+Key Features:
+Validates CSRF tokens and user authentication.
+Checks if the verification code is provided and valid.
+Feasibility Analysis (public/api/calculator/feasibility-analysis.php)
+Purpose: Analyzes the feasibility of a business project based on various input parameters.
+Key Features:
+Validates required fields.
+Calculates market analysis scores, risk assessments, and feasibility scores.
+Generates recommendations based on the feasibility score.
+Feasibility (public/api/calculator/feasibility.php)
+Purpose: Analyzes the feasibility of a business based on market and financial inputs.
+Key Features:
+Validates input using a request validator.
+Generates a detailed PDF report of the analysis.
+Import Cost Calculator (public/api/calculator/import-cost.php)
+Purpose: Calculates the total import cost of a vehicle based on various parameters.
+Key Features:
+Validates required fields and their types.
+Uses services to calculate costs based on input data.
+6. Partnership Cost Calculator (public/api/calculator/partnership-cost.php)
+Purpose: Calculates costs associated with a partnership based on investment and profit-sharing.
+Key Features:
+Validates required fields.
+Calculates expected returns and monthly shares based on input data.
+7. Partnership Analysis (public/api/calculator/partnership.php)
+Purpose: Analyzes partnership opportunities based on market and inventory data.
+Key Features:
+Validates input and calculates investment requirements and monthly projections.
+Generates a PDF report of the analysis.
+Calendar Slots (public/api/calendar/slots.php)
+Purpose: Retrieves available calendar slots for scheduling meetings.
+Key Features:
+Validates the date and timezone.
+Returns available slots for the specified date.
+Cancel Meeting (public/api/meetings/cancel.php)
+Purpose: Cancels a scheduled meeting.
+Key Features:
+Validates input and user authentication.
+Logs the request and returns success or error messages.
+Meeting Details (public/api/meetings/details.php)
+Purpose: Retrieves details of a specific meeting by ID.
+Key Features:
+Validates the meeting ID and returns meeting details or an error.
+Reschedule Meeting (public/api/meetings/reschedule.php)
+Purpose: Reschedules a meeting to a new time slot.
+Key Features:
+Validates input and user authentication.
+Returns success or error messages based on the operation.
+12. Schedule Meeting (public/api/meetings/schedule.php)
+Purpose: Schedules a new meeting based on provided data.
+Key Features:
+Validates input and returns the scheduled meeting details.
+13. User Meetings (public/api/meetings/user.php)
+Purpose: Retrieves meetings for a specific user.
+Key Features:
+Fetches and returns active meetings for the user.
+14. Newsletter Subscription (public/api/newsletter/subscribe.php)
+Purpose: Handles user subscriptions to the newsletter.
+Key Features:
+Validates email input and checks for existing subscriptions.
+Adds new subscribers and returns success or error messages.
+Summary of Findings
+The API is structured to handle various functionalities related to user authentication, meeting scheduling, financial analysis, and newsletter subscriptions.
+Each file is designed to validate input, handle errors gracefully, and return JSON responses.
+The use of logging throughout the API helps in debugging and monitoring the application's behavior.
+
+
+
+
+
+
+
+/public
+│
+└── /assets
+    ├── /images
+    │   ├── car-brands
+    │   │   ├── audi.svg
+    │   │   ├── bmw.svg
+    │   │   ├── ford.svg
+    │   │   ├── mercedes.svg
+    │   │   └── toyota.svg
+    │   └── /js
+    │       ├── calendar.js
+    │       ├── car-image-upload.js
+    │       ├── car-model-selector.js
+    │       └── meeting-actions.js
+
+
+
+JavaScript Files Summary
+1. Calendar Management (public/assets/js/calendar.js)
+Class: CarMeetingManager
+Purpose: Manages the scheduling of car meetings, including loading available time slots, handling user interactions, and submitting meeting requests.
+Key Features:
+Initializes elements and sets up event listeners for the meeting form.
+Loads available time slots based on the selected date and timezone.
+Validates user input and handles form submission for scheduling meetings.
+Provides error handling and retry logic for fetching time slots.
+Allows users to select time slots and updates the form accordingly.
+2. Car Image Upload (public/assets/js/car-image-upload.js)
+Purpose: Handles image uploads for car listings using Dropzone.js.
+Key Features:
+Configures Dropzone for drag-and-drop file uploads with validation for file types and sizes.
+Displays image previews and upload progress.
+Manages the removal of uploaded files and updates the list of uploaded images.
+Provides feedback to users on upload success or failure.
+3. Car Model Selector (public/assets/js/car-model-selector.js)
+Purpose: Dynamically updates the car model options based on the selected car brand.
+Key Features:
+Listens for changes in the brand selection dropdown.
+Updates the model input field with available models for the selected brand.
+Disables the model input if no brand is selected.
+4. Meeting Actions (public/assets/js/meeting-actions.js)
+Class: meeting_actions
+Purpose: Manages actions related to meetings, including scheduling, canceling, and rescheduling meetings.
+Key Features:
+Provides methods to cancel meetings, view meeting details, and reschedule meetings.
+Fetches meeting details from the server and displays them in a modal.
+Handles the loading of available time slots for rescheduling.
+Validates user input and provides feedback on success or failure of meeting actions.
+Summary of Findings
+The JavaScript files are well-structured to handle various functionalities related to car meetings, image uploads, and dynamic form interactions.
+calendar.js focuses on managing the scheduling process, ensuring that users can select available time slots and submit their meeting requests effectively.
+car-image-upload.js leverages Dropzone.js to provide a user-friendly interface for uploading images, with built-in validation and error handling.
+car-model-selector.js enhances user experience by dynamically updating model options based on the selected brand, ensuring that users can only select valid models.
+meeting-actions.js centralizes the logic for managing meetings, providing a clear interface for users to interact with their scheduled meetings.
+
+
+
+
+
+
+
+
+
+
+       
+/public
+│
+└── /auth
+    ├── verify-2fa.php
+    
+
+
+File Summary: verify-2fa.php
+Purpose
+The verify-2fa.php file is responsible for handling the verification process of two-factor authentication (2FA) for users. It ensures that users who have enabled 2FA can verify their identity using a code generated by an authenticator app.
+Key Features and Functionality
+Initialization:
+The script starts by including the necessary bootstrap file and importing required classes for session management, CSRF protection, 2FA handling, and user data retrieval.
+Session Management:
+It checks if there is a pending 2FA verification by looking for a session variable (2fa_pending). If not set, it redirects the user to the login page.
+User Data Retrieval:
+The script retrieves the user ID and email from the session. If the user ID is not found, it logs an error and redirects to the login page.
+It fetches user data from the database using the User model.
+CSRF Token Generation:
+A CSRF token is generated to protect against cross-site request forgery attacks.
+Handling POST Requests:
+If the request method is POST, it processes the verification:
+Validates the CSRF token.
+Checks if the verification code is provided and not empty.
+Calls the verifySetup method of the TwoFactorAuth class to verify the code.
+If successful, it creates a new session for the user and redirects them to the dashboard.
+If verification fails, it logs the error and displays an error message.
+HTML Structure:
+The file outputs an HTML form for the user to enter their 2FA code.
+It includes error handling to display any verification errors.
+The form uses Tailwind CSS for styling and includes a button for using backup codes.
+JavaScript:
+A small script focuses the input field for the verification code when the page loads.
+Summary of Findings
+The verify-2fa.php file is crucial for the security of the application, ensuring that users who have enabled 2FA can securely verify their identity.
+It effectively manages sessions, validates user input, and provides user feedback through error messages.
+The use of CSRF protection enhances the security of the form submission process.
+The HTML structure is user-friendly, guiding users through the verification process with clear instructions and error handling.
+
+
+
+
+       
+/public
+│
+└── /cache
+    ├── featured_cars.cache
+    └── market_data.cache
+
+
+
+Cache Files Summary
+Featured Cars Cache (public/cache/featured_cars.cache)
+Content:
+- Purpose: This cache file stores the result of a query for featured cars based on specific criteria.
+Key Features:
+The success field indicates whether the query was successful.
+The html field contains a message that will be displayed to the user, indicating that no cars were found matching the criteria.
+The count field shows the number of cars found, which is 0 in this case.
+Market Data Cache (public/cache/market_data.cache)
+Content:
+- Purpose: This cache file stores market data for various car models, including pricing and condition.
+Key Features:
+Each car model (e.g., honda_CR-V, nissan_Maxima, toyota_Corolla) is represented as a key in the JSON object.
+Each key contains an array of objects with details about the car, including:
+price: The market price of the car.
+year: The manufacturing year of the car.
+mileage: The mileage of the car.
+condition: The condition of the car (e.g., "Excellent").
+Summary of Findings
+The cache folder is used to store temporary data that can be quickly accessed to improve performance and reduce the need for repeated database queries.
+The featured_cars.cache file provides a user-friendly message when no cars are found, which can be displayed in the UI.
+The market_data.cache file contains structured data about various car models, which can be used for displaying market information, pricing, and comparisons.
+Caching this data helps in optimizing the application's performance by reducing the load on the database and speeding up response times for users.
+
+
+
+
+
+/public
+│
+└── /Components
+    └── /AboutUs
+        └── AboutUs.php
+    └── /Cars
+        ├── add-listing.php
+        ├── add_favorite.php
+        ├── ajax-search.php
+        ├── compare-view.php
+        ├── delete-image.php
+        ├── favorites.php
+        ├── featured-cars-search.php
+        ├── hero-search.php
+        ├── index.php
+        ├── process-listing.php
+        ├── quick-view.php
+        ├── search.php
+        ├── toggle-favorite.php
+        ├── update-status.php
+        └── upload-images.php
+        └── view.php
+
+
+
+
+File Summary: AboutUs.php
+Purpose
+The AboutUs.php file defines a class that generates the HTML for the "About Us" section of a website. This section typically provides information about the company, its services, and key statistics that highlight its achievements.
+Key Features and Functionality
+1. Class Definition:
+The class AboutUs encapsulates all functionality related to the "About Us" section.
+2. Private Property:
+$stats: An array that holds statistics about the company, such as the number of cars listed, active users, successful deals, and trusted partners.
+Constructor:
+The constructor initializes the $stats property with predefined values. In a real application, these values would typically be fetched from a database.
+Render Method:
+render(): This method generates the HTML output for the "About Us" section.
+The method constructs a string of HTML that includes:
+A hero section with a title, description, and call-to-action buttons.
+A statistics section that displays key metrics using cards, each showing an icon, number, and label.
+A services grid that outlines the services offered by the company, each represented by a card with an icon and description.
+A "Why Choose Us" section that highlights the company's strengths and support services.
+Dynamic Content:
+The statistics are dynamically generated using a loop that iterates over the $stats array, allowing for easy updates and maintenance.
+Styling and Animation:
+The HTML uses Tailwind CSS classes for styling and layout.
+AOS (Animate On Scroll) library is used for animations, enhancing the user experience as elements appear on the page.
+Summary of Findings
+The AboutUs.php file is well-structured and modular, making it easy to maintain and update.
+The use of a class encapsulates the functionality, promoting reusability and separation of concerns.
+The statistics and services are presented in a visually appealing manner, enhancing the overall user experience.
+The file effectively combines static content with dynamic data, allowing for a flexible and informative "About Us" section.
+
+
+
+
+Summary of Each File's Purpose
+add-listing.php: Handles the form for adding a new car listing, including input validation and processing.
+add_favorite.php: Manages the functionality to add a car to the user's favorites list.
+ajax-search.php: Processes AJAX requests for searching cars based on user input.
+compare-view.php: Displays a comparison view of selected cars, allowing users to compare features and prices.
+delete-image.php: Manages the deletion of images associated with car listings.
+favorites.php: Displays a list of the user's favorite cars, allowing for easy access to saved listings.
+featured-cars-search.php: Handles searching for featured cars, likely displaying them on the homepage or a dedicated section.
+hero-search.php: Manages the search functionality in the hero section of the website, allowing users to quickly find cars.
+index.php: The main index page for displaying car listings, possibly with filters and sorting options.
+process-listing.php: Processes the form submission for adding a new car listing, including saving data to the database.
+quick-view.php: Displays a quick view of a car's details, likely in a modal or popup format.
+search.php: Handles the search functionality for cars, processing user queries and displaying results.
+toggle-favorite.php: Toggles the favorite status of a car, allowing users to add or remove cars from their favorites.
+update-status.php: Updates the status of a car listing (e.g., available, sold, etc.) based on user actions.
+upload-images.php: Manages the uploading of images for car listings, including validation and storage.
+view.php: Displays detailed information about a specific car listing, including images, specifications, and user actions.
+
+
+
+
+/public
+│
+└── /Components
+    └── /Contact
+        ├── contact-view.php
+        ├── Contact.php
+        ├── index.php
+        └── submit.php
+
+
+
+        Contact Files Summary
+1. contact-view.php
+Purpose: Displays the contact form and related information for users to get in touch with the company.
+Key Features:
+Initializes variables for error handling and success messages.
+Contains a hero section with a title and description.
+Displays purpose cards for different contact reasons (e.g., general inquiry, sales, support).
+Includes a contact form with fields for name, email, phone, subject, and message.
+Shows business hours and status (open/closed) based on the current time.
+Provides quick contact options (phone and email) and location details.
+Implements JavaScript for dynamic features like copying the address and updating business status.
+Contact.php
+Purpose: Handles the logic for processing the contact form submissions.
+Key Features:
+Initializes the ContactStorage class for saving submissions.
+Validates form data upon submission, checking for required fields and valid formats.
+Prepares submission data, including user details and IP address.
+Logs successful submissions and errors.
+Renders the contact view with business hours and purposes for contacting.
+3. index.php
+Purpose: Serves as the entry point for the contact component, managing the display of the contact form and car selection.
+Key Features:
+Handles GET requests to load car details if a car ID is provided.
+Initializes the MeetingScheduler and retrieves available meeting types.
+Displays a list of cars for selection or shows details of a selected car.
+Includes a form for scheduling a meeting with options for meeting type, duration, and timezone.
+Uses JavaScript to populate available time slots based on user selections.
+4. submit.php
+Purpose: Processes the AJAX submission of the contact form.
+Key Features:
+Validates the request method and checks for required fields.
+Sanitizes and prepares submission data for storage.
+Logs submission data and errors.
+Returns a JSON response indicating success or failure of the submission.
+Summary of Findings
+The Contact component is well-structured to handle user inquiries and facilitate communication with the company.
+The contact-view.php file provides a user-friendly interface for users to submit their inquiries, while also displaying relevant information about the company.
+The Contact.php file encapsulates the logic for processing form submissions, ensuring that data is validated and stored correctly.
+The index.php file integrates car selection with the contact form, allowing users to schedule meetings related to specific cars.
+The submit.php file handles AJAX submissions, providing a seamless experience for users without requiring full page reloads.
+
+
+
+
+/public
+│
+└── /Components
+    └── /FeaturedCars
+        ├── FeaturedCars.php
+        └── featured-cars.js
+
+
+Featured Cars Files Summary
+FeaturedCars.php
+Purpose: This file defines the FeaturedCars class, which is responsible for managing the logic related to displaying featured car listings on the website.
+Key Features:
+Initialization: The constructor initializes various components, including car listings, user favorites, image handling, and search filtering.
+User Session Management: It manages user sessions to retrieve the user ID and ensure secure access to features.
+Render Method: The render() method fetches and filters car listings based on search parameters, sorts them, and limits the results to featured cars.
+Market Value Calculation: It calculates market values and price trends for the featured cars, providing insights into pricing.
+Dynamic Content Rendering: The class includes methods to render HTML content for the featured cars, including cards, sorting options, and error handling.
+Comparison Functionality: It manages the comparison of cars, allowing users to select multiple cars for side-by-side comparison.
+featured-cars.js
+Purpose: This JavaScript file manages the interactive features of the featured cars section, including view toggling, sorting, and comparison functionality.
+Key Features:
+State Management: It maintains the state of the view mode (grid/list), sorting options, and selected cars for comparison.
+Event Listeners: The script initializes event listeners for user interactions, such as changing the view mode, sorting options, and selecting cars for comparison.
+Dynamic UI Updates: It updates the UI based on user actions, such as changing the layout of car cards and managing the comparison bar.
+Quick View Functionality: The script handles quick view modals for displaying detailed information about a selected car without navigating away from the page.
+Comparison Logic: It manages the selection of cars for comparison, updating the comparison bar and enabling/disabling the compare button based on user selections.
+Summary of Findings
+The FeaturedCars component is designed to provide a comprehensive and interactive experience for users looking to explore featured car listings.
+The FeaturedCars.php file encapsulates the backend logic for fetching, filtering, and rendering car listings, ensuring that users see relevant and up-to-date information.
+The featured-cars.js file enhances the user experience by providing dynamic interactions, allowing users to easily switch between views, sort listings, and compare cars.
+Together, these files create a cohesive feature that improves user engagement and facilitates informed decision-making when browsing cars.
+
+
+
+
+
+/public
+│
+└── /Components
+    └── /Footer
+        └── Footer.php
+
+
+
+File Summary: Footer.php
+Purpose
+The Footer.php file defines a class that generates the HTML for the footer section of the website. This section typically includes links to social media, company information, services, and a newsletter subscription form.
+Key Features and Functionality
+1. Class Definition:
+The class Footer encapsulates all functionality related to rendering the footer of the website.
+Private Property:
+$baseUrl: A private property that stores the base URL for the application, which is used to construct links to various resources.
+3. Constructor:
+The constructor initializes the $baseUrl property to point to the public directory of the project.
+Social Icons Method:
+getSocialIcons(): This private method returns an associative array of SVG icons for social media platforms (Twitter, Facebook, WhatsApp). Each icon is represented as an SVG string.
+5. Render Method:
+render(): This public method generates the HTML output for the footer section.
+The method constructs a string of HTML that includes:
+An upper section with the company logo and buttons for scheduling a meeting and contacting via WhatsApp.
+A main content area with links to various pages, including "About Us," "Services," "Quick Tools," and "Car Services."
+A newsletter subscription form that allows users to enter their email and subscribe to updates.
+A section displaying trusted car brands with their logos.
+A bottom section with copyright information and social media links.
+6. Dynamic Content:
+The footer content is dynamically generated using the $baseUrl property to ensure that all links are correctly formed based on the application's structure.
+7. Styling and Scripts:
+The footer includes links to external CSS and JavaScript files for styling and functionality, such as the newsletter subscription.
+Summary of Findings
+The Footer.php file is well-structured and modular, making it easy to maintain and update.
+The use of a class encapsulates the functionality, promoting reusability and separation of concerns.
+The footer provides essential links and information, enhancing the overall user experience by making it easy for users to navigate the site and stay connected.
+The inclusion of social media icons and a newsletter subscription form encourages user engagement and interaction with the brand.
+
+
+
+/public
+│
+└── /Components
+    └── /Header
+        └── Header.php
+
+
+
+File Summary: Header.php
+Purpose
+The Header.php file defines a class that generates the HTML for the header section of the website. This section typically includes the site logo, navigation links, search functionality, language selection, and authentication buttons.
+Key Features and Functionality
+1. Class Definition:
+The class Header encapsulates all functionality related to rendering the header of the website.
+2. Private Properties:
+$lang: Stores the current language setting for the website.
+$userData: Holds user data retrieved from the session.
+$isAuthenticated: A boolean indicating whether the user is authenticated.
+3. Constructor:
+The constructor initializes the language setting and retrieves user session data using the Session class.
+It checks if the user is authenticated by verifying the presence of a user_id in the session.
+Render Method:
+render(): This public method generates the HTML output for the header section.
+The method constructs a string of HTML that includes:
+A logo section with a mobile menu for smaller screens.
+Main navigation links for different sections of the site (Home, Cars, Services, etc.).
+A right section that includes a search bar, language selector, and authentication buttons.
+Dynamic Menu Items:
+The header includes methods to generate menu items for both desktop and mobile views:
+getDesktopMenuItems(): Returns the HTML for the desktop navigation menu, including dropdowns for services and selling options if the user is authenticated.
+getMobileMenuItems(): Returns the HTML for the mobile navigation menu, using <details> elements for dropdowns.
+6. Search Bar:
+The header includes a search bar that allows users to search for cars directly from the header.
+Language Selector:
+A dropdown for selecting the website's language, allowing users to switch between English and Japanese.
+Authentication Buttons:
+Displays different buttons based on the user's authentication status:
+If authenticated, it shows the user's avatar and links to profile-related pages.
+If not authenticated, it provides options to log in or register.
+Summary of Findings
+The Header.php file is well-structured and modular, making it easy to maintain and update.
+The use of a class encapsulates the functionality, promoting reusability and separation of concerns.
+The header provides essential navigation and user interaction elements, enhancing the overall user experience by making it easy for users to navigate the site and access their accounts.
+The dynamic generation of menu items based on authentication status ensures that users have a tailored experience.
+
+
+
+
+/public
+│
+└── /Components
+    └── /Hero
+        └── Hero.php
+
+
+
+File Summary: Hero.php
+Purpose
+The Hero.php file defines a class that generates the HTML for the hero section of the website. This section typically includes a featured car preview, a search form, popular searches, and quick statistics about car listings.
+Key Features and Functionality
+1. Class Definition:
+The class Hero encapsulates all functionality related to rendering the hero section of the website.
+2. Private Properties:
+$carListing: An instance of the CarListing class, used to fetch car listings.
+$searchTracker: An instance of the SearchTracker class, used to track and retrieve popular search terms.
+Constructor:
+The constructor initializes the $carListing and $searchTracker properties, allowing the class to access car data and search statistics.
+Render Method:
+render(): This public method generates the HTML output for the hero section.
+The method constructs a string of HTML that includes:
+A background image and overlay for the hero section.
+A featured car preview on the right side, rendered using the renderCarCard() method.
+A search form on the left side, allowing users to search for cars by brand, model, or keyword.
+A dropdown for selecting locations.
+A section displaying popular searches and quick statistics about total listings, active dealers, and happy customers.
+5. Featured Car Retrieval:
+getFeaturedCar(): This private method fetches all car listings and filters them to find a featured car that is active. It returns the first featured car found or null if none exist.
+6. Car Card Rendering:
+renderCarCard($car): This public method generates the HTML for a car card, displaying the car's image, title, condition, price, and specifications. If no car is provided, it calls renderEmptyCard() to display a placeholder.
+7. Empty Card Rendering:
+renderEmptyCard(): This method generates a card indicating that no cars were found, providing a user-friendly message.
+Specification Item Rendering:
+renderSpecItem($label, $value): This method generates HTML for displaying individual specifications of a car, such as horsepower, transmission, fuel type, and location.
+9. Location Dropdown Rendering:
+renderLocations(): This private method generates options for the location dropdown based on predefined locations.
+10. Popular Searches Rendering:
+renderPopularSearches(): This method retrieves popular search terms from the SearchTracker and generates links for each term, allowing users to quickly search for popular queries.
+Summary of Findings
+The Hero.php file is well-structured and modular, making it easy to maintain and update.
+The use of a class encapsulates the functionality, promoting reusability and separation of concerns.
+The hero section provides essential features for users, including a search form, featured car preview, and quick statistics, enhancing the overall user experience.
+The dynamic generation of content based on car listings and popular searches ensures that users have access to relevant and up-to-date information.
+
+
+
+/public
+│
+└── /Components
+    └── /Testimonials
+        └── Testimonials.php
+
+
+File Summary: Testimonials.php
+Purpose
+The Testimonials.php file defines a class that generates the HTML for the testimonials section of the website. This section typically showcases user feedback and experiences, enhancing credibility and trust for potential customers.
+Key Features and Functionality
+Class Definition:
+The class Testimonials encapsulates all functionality related to rendering the testimonials section.
+2. Private Property:
+$testimonials: An array that holds testimonial data, including content, author information, and images.
+Constructor:
+The constructor initializes the $testimonials property with a predefined array of testimonials, each containing:
+content: The testimonial text.
+author: The name of the person giving the testimonial.
+role: The author's role or title.
+image: A URL to the author's image.
+Render Method:
+render(): This public method generates the HTML output for the testimonials section.
+The method constructs a string of HTML that includes:
+A section with a background and layout for displaying testimonials.
+A grid layout that separates the image column from the content column.
+A dynamic display of testimonial images, allowing for a 3D effect using CSS.
+The first testimonial's content is displayed prominently, including the author's name, role, and testimonial text.
+Navigation buttons for cycling through testimonials (previous and next).
+Dynamic Image Rendering:
+The method iterates over the $testimonials array to generate HTML for each testimonial image, applying CSS classes for styling and effects.
+Navigation Buttons:
+The section includes buttons for navigating through the testimonials, enhancing user interaction.
+CSS Styles:
+Inline styles are included to manage the 3D effect and visibility of the testimonial images.
+Summary of Findings
+The Testimonials.php file is well-structured and modular, making it easy to maintain and update.
+The use of a class encapsulates the functionality, promoting reusability and separation of concerns.
+The testimonials section provides essential social proof, enhancing the overall user experience by showcasing positive feedback from users.
+The dynamic rendering of testimonials and images ensures that the content is visually appealing and engaging for users.
+
+
+
+/public
+│
+└── /Components
+    └── /TrustedBrands
+        └── TrustedBrands.php
+
+
+
+File Summary: TrustedBrands.php
+Purpose
+The TrustedBrands.php file defines a class that generates the HTML for the trusted brands section of the website. This section typically showcases logos of trusted brands, enhancing credibility and partnership visibility.
+Key Features and Functionality
+Class Definition:
+The class TrustedBrands encapsulates all functionality related to rendering the trusted brands section.
+Render Method:
+render(): This public method generates the HTML output for the trusted brands section.
+The method constructs a string of HTML that includes:
+A section with a title and description, emphasizing the importance of trusted brands.
+A horizontal ticker that displays brand logos in a smooth scrolling format, enhancing visual appeal.
+The use of the Swiper library for creating a responsive and interactive slider for the brand logos.
+HTML Structure:
+The HTML includes:
+A title ("A World of Trusted Brands") and a descriptive text about the section.
+Two horizontal sliders (one for right-to-left and one for left-to-right) that contain brand logos.
+Each logo is wrapped in a swiper-slide class, allowing for smooth transitions and effects.
+4. Dynamic Content:
+The logos are sourced from external URLs, ensuring that the latest brand images are displayed without needing to host them locally.
+CSS Classes:
+The section uses various CSS classes for styling, ensuring that the layout is visually appealing and consistent with the overall design of the website.
+Summary of Findings
+The TrustedBrands.php file is well-structured and modular, making it easy to maintain and update.
+The use of a class encapsulates the functionality, promoting reusability and separation of concerns.
+The trusted brands section enhances the overall user experience by showcasing reputable brands, which can build trust with potential customers.
+The dynamic rendering of logos in a horizontal ticker format provides an engaging visual element that encourages user interaction.
+
+
+/public
+│
+└── /css
+    ├── /components
+    │   ├── footer.css
+    │   ├── trusted-brands.css
+    └── /dist
+        └── styles.css
+
+
+CSS Files Summary
+1. footer.css
+Purpose: Contains styles specifically for the footer section of the website.
+Key Features:
+Defines styles for the footer gradient background, logo, social icons, brand logos, and newsletter input.
+Includes hover effects for social and brand icons to enhance interactivity.
+Responsive adjustments for the footer layout on smaller screens.
+2. trusted-brands.css
+Purpose: Contains styles for the trusted brands component, which showcases brand logos.
+Key Features:
+Styles for the section containing brand logos, including layout and padding.
+Utilizes the Swiper library for creating a responsive slider for brand logos.
+Includes hover effects for brand logos to enhance user engagement.
+Responsive adjustments for logo display on smaller screens.
+styles.css (dist)
+Purpose: This is the main compiled CSS file that includes styles for the entire website, combining various components and utility classes.
+Key Features:
+Contains global styles, utility classes, and resets for consistent styling across browsers.
+Includes styles for various UI components such as buttons, cards, modals, dropdowns, and more.
+Implements responsive design principles with media queries for different screen sizes.
+Defines custom properties (CSS variables) for theming and consistent styling throughout the application.
+Includes styles for interactive elements like tooltips, avatars, and statistics.
+Summary of Findings
+The CSS files are well-organized into components and a main distribution file, promoting modularity and maintainability.
+Each component CSS file focuses on specific sections of the website, ensuring that styles are encapsulated and easy to manage.
+The main styles.css file consolidates styles from various components, providing a comprehensive styling solution for the entire application.
+Responsive design is a key focus, with media queries and flexible layouts ensuring a good user experience across different devices.
+The use of CSS variables allows for easy theming and consistent styling, making it simpler to manage design changes.
+
+
+
+
+
+
+/public
+│
+└── /js
+    ├── /components
+    │   ├── about-us.js
+    │   ├── calculator.js
+    │   ├── contact.js
+    │   ├── favorites.js
+    │   ├── feasibility-analysis.js
+    │   ├── featured-cars.js
+    │   ├── hero-search.js
+    │   ├── image-loader.js
+    │   ├── image-modal.js
+    │   ├── image-slider.js
+    │   ├── import-calculator.js
+    │   ├── newsletter.js
+    │   ├── partnership-calculator.js
+    │   ├── quick-search.js
+    │   ├── search-filter.js
+    │   ├── testimonials.js
+    │   └── trusted-brands.js
+    └── /utils
+        ├── api-helper.js
+        └── error-handler.js
+    ├── 2fa-setup.js
+    ├── 2fa-verify.js
+    ├── calculator.js
+    ├── components.js
+    ├── main.js
+    ├── scripts.js
+    └── verify-2fa.js
+
+
+
+Summary of Each Folder and File's Purpose
+/components: Contains JavaScript files that manage specific UI components of the application, such as forms, modals, sliders, and interactive elements.
+about-us.js: Handles interactions and dynamic content for the About Us section.
+calculator.js: Manages the functionality of various calculators used in the application.
+contact.js: Manages the contact form and submission logic.
+favorites.js: Handles the logic for managing user favorites.
+feasibility-analysis.js: Manages the feasibility analysis calculations and interactions.
+featured-cars.js: Handles the display and interactions for featured car listings.
+hero-search.js: Manages the search functionality in the hero section.
+image-loader.js: Handles image loading and display logic.
+image-modal.js: Manages the modal for displaying images.
+image-slider.js: Handles the image slider functionality.
+import-calculator.js: Manages the import cost calculator functionality.
+newsletter.js: Handles newsletter subscription logic.
+partnership-calculator.js: Manages the partnership cost calculator functionality.
+quick-search.js: Handles quick search interactions.
+search-filter.js: Manages search filtering functionality.
+testimonials.js: Handles the display and interactions for testimonials.
+trusted-brands.js: Manages the display of trusted brand logos.
+/utils: Contains utility JavaScript files that provide helper functions and classes used throughout the application.
+api-helper.js: Provides functions for making API calls and handling responses.
+error-handler.js: Manages error handling and logging throughout the application.
+2fa-setup.js: Manages the setup process for two-factor authentication.
+2fa-verify.js: Handles the verification process for two-factor authentication.
+main.js: The main JavaScript file that initializes the application and includes common functionality.
+scripts.js: Contains additional scripts for various functionalities across the application.
+verify-2fa.js: Handles the verification logic for two-factor authentication.
+
+
+
+
+
+/public
+│
+└── /pages
+    ├── /calculators
+    │   └── calculators.php
+    ├── /login
+    │   ├── email-verification.php
+    │   ├── forgot-password.php
+    │   ├── login.php
+    │   ├── logout.php
+    │   ├── resend-verification.php
+    │   ├── reset-password.php
+    │   └── verify-email.php
+    └── /register
+        └── register.php
+
+
+
+Summary of Each File's Purpose
+1. /calculators/calculators.php
+Purpose: This file serves as the main page for vehicle cost calculators. It includes various calculators such as the import cost calculator, partnership cost calculator, and feasibility analysis. The page features a user interface for inputting data and displaying results.
+/login/email-verification.php
+Purpose: This page is displayed after a user registers and needs to verify their email. It provides a verification link and instructions for the user to confirm their email address.
+3. /login/forgot-password.php
+Purpose: This page allows users to request a password reset. It includes a form for entering their email address and handles the logic for generating a password reset link.
+4. /login/login.php
+Purpose: This is the login page where users can enter their credentials to access their accounts. It includes form validation, error handling, and security features like CSRF protection.
+/login/logout.php
+Purpose: This page handles user logout functionality. It terminates the user session and redirects them to the login page with a success message.
+6. /login/resend-verification.php
+Purpose: This page allows users to request a new email verification link if they did not receive the original one. It includes a form for entering their email address and handles the logic for resending the verification email.
+/login/reset-password.php
+Purpose: This page allows users to reset their password using a token received via email. It includes a form for entering a new password and handles validation and updating the password in the database.
+/login/verify-email.php
+Purpose: This page processes the email verification token sent to the user. It verifies the token, updates the user's verification status in the database, and displays a success message.
+9. /register/register.php
+Purpose: This page allows new users to create an account. It includes a registration form with fields for name, email, and password, along with validation and error handling.
+Summary of Findings
+The public/pages directory is well-organized, with separate folders for calculators and login-related pages.
+Each file serves a specific purpose related to user authentication, registration, and calculators, enhancing the overall functionality of the application.
+The use of CSRF protection and session management across the login pages indicates a focus on security and user experience.
+
+
+
+
+
+/public
+│
+└── /settings
+    ├── 2fa.php
+    ├── activity.php
+    ├── notifications.php
+    └── security.php
+
+
+
+Settings Files Summary
+1. 2fa.php
+Purpose: This file handles the setup for two-factor authentication (2FA) for users.
+Key Features:
+Ensures the user is logged in before accessing the page.
+Initializes CSRF protection to prevent cross-site request forgery.
+Retrieves the user's email for displaying in the setup process.
+Generates a QR code for the user to scan with their authenticator app.
+Displays backup codes for the user to save securely after enabling 2FA.
+Provides a user-friendly interface for setting up 2FA.
+activity.php
+Purpose: This file displays the user's account activity, including login attempts and changes to security settings.
+Key Features:
+Requires user authentication to access the activity log.
+Retrieves user activities from the ActivityLogger service.
+Allows filtering of activities based on type (e.g., logins, security changes).
+Displays activities in a table format, including details like IP address and browser used.
+Provides a user-friendly interface for reviewing account activity.
+3. notifications.php
+Purpose: This file manages security notifications for the user, allowing them to view and mark notifications as read.
+Key Features:
+Requires user authentication to access notifications.
+Retrieves unread notifications from the SecurityNotification service.
+Allows users to mark notifications as read through a form submission.
+Displays notifications with varying priority levels (high, medium, low) using different alert styles.
+Provides a user-friendly interface for managing security notifications.
+4. security.php
+Purpose: This file handles the security settings for the user's account, allowing them to manage their security preferences.
+Key Features:
+Requires user authentication to access security settings.
+Provides options for changing passwords, enabling 2FA, and managing security questions.
+Displays current security settings and allows users to update them.
+Ensures that all changes are validated and securely processed.
+Summary of Findings
+The public/settings directory is well-organized, with separate files for different aspects of user account security and settings.
+Each file serves a specific purpose related to user authentication, activity logging, notifications, and security management, enhancing the overall functionality of the application.
+The use of CSRF protection and session management across these files indicates a focus on security and user experience.
+The user interfaces are designed to be user-friendly, providing clear instructions and feedback for actions taken by the user.
+
+
+
+
+/public
+│
+├── dashboard.php
+└── index.php
+
+
+File Summary: dashboard.php
+Purpose
+The dashboard.php file serves as the user dashboard for the Car Management System. It provides an interface for logged-in users to access various functionalities based on their roles (e.g., admin).
+Key Features and Functionality
+1. Session Management:
+Initializes the session and checks if the user is logged in. If not, it redirects to the login page.
+2. User Role Check:
+Creates an instance of the User class to determine if the logged-in user has admin privileges.
+3. HTML Structure:
+The page includes a responsive navbar with the title "Dashboard" and a logout button.
+If the user is an admin, a link to the security logs is displayed.
+Styling and Scripts:
+Utilizes DaisyUI for styling and Tailwind CSS for layout.
+Summary of Findings
+The dashboard.php file is straightforward, focusing on user authentication and role management.
+It provides a clean interface for users to navigate to different functionalities based on their permissions.
+---
+File Summary: index.php
+Purpose
+The index.php file serves as the main entry point for the Car Marketplace application. It integrates various components to create the homepage, showcasing featured cars, about us information, testimonials, and more.
+Key Features and Functionality
+1. Component Imports:
+Imports various components such as Header, Hero, Featured Cars, About Us, Testimonials, Trusted Brands, Contact, and Footer.
+Session Management:
+Initializes the session and checks if the user is authenticated, making the authentication status available to JavaScript.
+3. Dynamic Content Rendering:
+Renders the imported components in the main content area, allowing for a modular and maintainable structure.
+HTML Structure:
+The page includes a responsive layout with a header, main content area, and footer.
+Uses meta tags for SEO and responsive design.
+5. Styling and Scripts:
+Links to various CSS stylesheets and JavaScript libraries for styling and functionality, including AOS for animations and Swiper for sliders.
+Conditional Script Loading:
+Only includes specific scripts based on the current page, optimizing performance.
+Summary of Findings
+The index.php file is well-structured, integrating multiple components to create a cohesive homepage.
+It effectively manages user authentication and provides a dynamic user experience through modular components.
+The use of external libraries and conditional loading enhances the functionality and performance of the application.
+
+
+
+
+
+/src
+│
+└── /Calculator
+    └── CostBreakdown.php
+
+
+File Summary: CostBreakdown.php
+Purpose
+The CostBreakdown.php file defines the CostBreakdown class, which is responsible for calculating the total import cost of a vehicle, including various components such as shipping costs, customs duties, taxes, and risk factors.
+Key Features and Functionality
+Namespace and Dependencies:
+The class is defined under the App\Calculator namespace.
+It uses the ExchangeRateServiceInterface to handle currency conversion.
+2. Constructor:
+The constructor accepts an instance of ExchangeRateServiceInterface, allowing the class to utilize the exchange rate service for currency conversion.
+3. Main Method: calculateTotalImportCost:
+This method calculates the total import cost based on the base price, source and target currencies, and additional parameters.
+It performs the following steps:
+Converts the base price to the target currency.
+Calculates additional costs such as shipping, customs duty, and taxes.
+Computes risk factors and generates a recommendation based on the total cost and risk assessment.
+4. Private Methods:
+calculateShippingCost: Calculates shipping costs based on dimensions and weight.
+calculateCustomsDuty: Determines customs duty based on the destination and vehicle age.
+calculateTaxesAndFees: Calculates taxes based on the destination.
+calculateRiskFactors: Assesses risk factors based on vehicle age and shipping weight.
+getMarketRisk: Retrieves market risk values based on the destination.
+generateRecommendation: Provides a recommendation based on the total cost and average risk factors.
+5. Return Structure:
+The calculateTotalImportCost method returns an associative array containing:
+Total cost
+Breakdown of costs (base price, shipping cost, customs duty, taxes and fees)
+Currency
+Risk factors
+Recommendation based on the calculated values.
+Summary of Findings
+The CostBreakdown.php file is well-structured and modular, focusing on the calculation of import costs for vehicles.
+The use of dependency injection for the exchange rate service promotes flexibility and testability.
+The class encapsulates complex calculations and risk assessments, providing a clear interface for calculating total import costs.
+The detailed breakdown of costs and risk factors enhances the decision-making process for users involved in vehicle imports.
+
+
+
+/src
+│
+└── /Classes
+    └── /Auth
+        ├── Authentication.php
+        ├── CSRF.php
+        ├── EmailVerification.php
+        ├── PasswordReset.php
+        ├── Session.php
+        └── TwoFactorAuth.php
+
+
+File Summaries
+1. Authentication.php
+Purpose: Manages user authentication processes, including registration, login, and logout.
+Key Features:
+Handles user registration and login, including session management.
+Regenerates session IDs for security after login.
+Generates CSRF tokens upon successful login.
+Provides methods to check if a user is logged in and to retrieve the current user.
+CSRF.php
+Purpose: Manages Cross-Site Request Forgery (CSRF) protection.
+Key Features:
+Generates and validates CSRF tokens to protect against CSRF attacks.
+Ensures a token is present in the session and generates a new one if necessary.
+Provides methods to retrieve the token and its name.
+3. EmailVerification.php
+Purpose: Handles the email verification process for users.
+Key Features:
+Generates a secure verification token for a user.
+Sends a verification email containing the token.
+Verifies the email using the provided token and updates the user's verification status in the database.
+4. PasswordReset.php
+Purpose: Manages the password reset process for users.
+Key Features:
+Creates a password reset token and stores it with an expiration time.
+Validates the token to ensure it is not expired and has not been used.
+Resets the user's password if the token is valid and updates the database.
+Provides methods to generate a reset link.
+Session.php
+Purpose: Manages user sessions.
+Key Features:
+Implements a singleton pattern to ensure a single session instance.
+Provides methods to start, set, get, and remove session variables.
+Supports flash messages for temporary session data.
+Includes methods for session destruction and regeneration.
+6. TwoFactorAuth.php
+Purpose: Manages two-factor authentication (2FA) for users.
+Key Features:
+Sets up 2FA by generating a secret and backup codes for the user.
+Verifies the 2FA code entered by the user during login.
+Generates Time-based One-Time Passwords (TOTP) for verification.
+Handles backup code verification and updates the storage accordingly.
+Summary of Findings
+The src/Classes/Auth directory is well-structured, focusing on various aspects of user authentication and security.
+Each class encapsulates specific functionality, promoting modularity and maintainability.
+The use of logging throughout the classes helps in tracking actions and debugging issues.
+The implementation of CSRF protection, email verification, password reset, and two-factor authentication enhances the security of the application.
+
+
+/src
+│
+└── /Classes
+    └── /Cache
+        └── CacheManager.php
+
+
+
+File Summary: CacheManager.php
+Purpose
+The CacheManager.php file defines the CacheManager class, which is responsible for managing caching mechanisms using Redis and file-based storage. This class provides methods to set, get, and delete cached data efficiently.
+Key Features and Functionality
+Dependencies:
+The class requires the Predis library for Redis interactions, which is included via Composer's autoload.
+2. Private Properties:
+$redis: An instance of the Redis client.
+$isAvailable: A boolean indicating whether the Redis connection is available.
+$cacheDir: The directory path for file-based caching.
+3. Constructor:
+Initializes the cache directory and attempts to establish a connection to the Redis server.
+If the connection fails, it logs the error and sets $isAvailable to false.
+4. Public Methods:
+get(string $key): Retrieves a value from the cache using the specified key. It first attempts to get the value from Redis; if that fails, it falls back to file-based caching.
+set(string $key, $value, int $ttl = 3600): bool: Stores a value in the cache with an optional time-to-live (TTL). It tries to set the value in Redis first, then falls back to file-based caching if Redis is unavailable.
+delete(string $key): bool: Deletes a value from the cache using the specified key. It attempts to delete from Redis first, then from file-based storage.
+5. Private Methods:
+getFromFile(string $key): Retrieves a value from file-based caching. It checks for expiration and returns null if the cache is expired or does not exist.
+setToFile(string $key, $value, int $ttl): bool: Stores a value in file-based caching with an expiration time.
+deleteFileCache(string $key): bool: Deletes a cached file based on the key.
+getCacheFilePath(string $key): string: Returns the file path for the cache file based on the key.
+6. Error Handling:
+The class includes error logging for Redis operations, ensuring that issues are recorded for debugging.
+Summary of Findings
+The CacheManager.php file is well-structured and modular, focusing on efficient caching mechanisms.
+The dual caching strategy (Redis and file-based) provides flexibility and reliability, ensuring that the application can still function even if Redis is unavailable.
+The use of private methods for file operations encapsulates the logic, promoting code reusability and maintainability.
+The class is designed to handle errors gracefully, logging issues without disrupting the user experience.
+
+
+
+
+/src
+│
+└── /Classes
+    └── /Calculator
+        └── /Business
+            ├── CostBreakdown.php
+            ├── CustomsDutyCalculator.php
+            ├── FeasibilityAnalyzer.php
+            ├── PartnershipCalculator.php
+            └── ShippingCalculator.php
+
+File Summaries
+CostBreakdown.php
+Purpose: This class calculates the total import cost of a vehicle, including various components such as shipping costs, customs duties, taxes, and risk factors.
+Key Features:
+Validates input data to ensure all required fields are present and valid.
+Calculates the total import cost and provides a breakdown of costs by percentage.
+Includes methods for calculating taxes, fees, processing fees, and insurance costs.
+2. CustomsDutyCalculator.php
+Purpose: This class calculates customs duties based on the vehicle's value, age, and destination.
+Key Features:
+Uses predefined duty and VAT rates for different countries.
+Calculates the total duties, including VAT and processing fees.
+Provides a method to determine the duty rate based on the vehicle's age for the Philippines.
+3. FeasibilityAnalyzer.php
+Purpose: This class analyzes the feasibility of entering a specific market based on market data and financial metrics.
+Key Features:
+Contains market data for different countries, including growth potential, competition level, and risk factors.
+Provides methods to analyze feasibility, calculate risk scores, and generate recommendations based on profitability and risk assessments.
+4. PartnershipCalculator.php
+Purpose: This class calculates the initial and detailed investment required for a partnership in a specific market.
+Key Features:
+Defines setup costs and market rates for different countries.
+Provides methods to calculate detailed investments, initial investments, monthly projections, and return on investment (ROI).
+Includes calculations for operating capital and inventory costs.
+ShippingCalculator.php
+Purpose: This class calculates the total shipping cost for a vehicle based on its specifications and the origin and destination of the shipment.
+Key Features:
+Validates input data for vehicle details, origin, and destination.
+Checks the cache for previously calculated shipping costs to improve performance.
+Uses an external shipping API to fetch container rates and calculates total shipping costs, including documentation fees and insurance.
+Summary of Findings
+The src/Classes/Calculator/Business directory is well-structured, focusing on various aspects of vehicle cost calculations and feasibility analysis.
+Each class encapsulates specific functionality, promoting modularity and maintainability.
+The use of validation methods ensures that input data is accurate and reliable before processing.
+The integration of external services (e.g., shipping API, exchange rate service) enhances the functionality of the calculations.
+The classes provide detailed breakdowns of costs, risk assessments, and recommendations, aiding users in making informed decisions.
+
+
+
+
+/src
+│
+└── /Classes
+    └── /Cars
+        ├── CarListing.php
+        ├── ImageHandler.php
+        ├── ImageUploader.php
+        └── SearchFilter.php
+
+
+File Summaries
+CarListing.php
+Purpose: Manages car listings, including loading, adding, updating, and deleting listings from a JSON data file.
+Key Features:
+Loads car data from a JSON file and provides methods to retrieve all listings or a specific listing by ID.
+Allows adding new listings, updating existing ones, and deleting listings.
+Supports setting a listing as featured.
+Uses constants for brands, body types, fuel types, and other specifications to standardize data.
+ImageHandler.php
+Purpose: Handles image processing for car images, including uploading, optimizing, and generating thumbnails.
+Key Features:
+Validates uploaded images based on type and size.
+Processes images to maintain aspect ratio and optimize file size.
+Generates and saves thumbnails for uploaded images.
+Provides methods to retrieve image URLs and delete images along with their thumbnails.
+ImageUploader.php
+Purpose: Manages the uploading of car images, including validation and processing.
+Key Features:
+Validates uploaded files to ensure they meet type and size requirements.
+Creates unique filenames for uploaded images and saves them to the appropriate directory.
+Generates thumbnails for uploaded images and saves them in a separate directory.
+Provides methods for deleting images and cleaning up temporary files.
+SearchFilter.php
+Purpose: Filters car listings based on various criteria such as brand, price range, year, location, and features.
+Key Features:
+Retrieves all car listings and applies filters based on user input.
+Supports sorting of listings based on price, year, or creation date.
+Provides methods to get available brands and locations from the listings.
+Summary of Findings
+The src/Classes/Cars directory is well-structured, focusing on managing car listings and associated images.
+Each class encapsulates specific functionality, promoting modularity and maintainability.
+The use of constants in CarListing.php helps standardize data and makes it easier to manage.
+The image handling classes (ImageHandler.php and ImageUploader.php) ensure that images are processed and stored correctly, enhancing the user experience.
+The SearchFilter.php class provides a robust filtering mechanism, allowing users to find listings that match their criteria effectively.
+
+
+
+/src
+│
+└── /Classes
+    └── /Contact
+        └── ContactStorage.php
+
+File Summary: ContactStorage.php
+Purpose
+The ContactStorage.php file defines the ContactStorage class, which is responsible for managing contact form submissions. It extends the JsonStorage class to handle data storage in a JSON file.
+Key Features and Functionality
+1. Namespace and Dependencies:
+The class is defined under the Classes\Contact namespace.
+It uses the JsonStorage class for handling JSON file operations.
+2. Constructor:
+The constructor calls the parent constructor of JsonStorage, specifying the filename contact_submissions.json where contact submissions will be stored.
+Public Methods:
+saveSubmission(array $formData): bool:
+Accepts an array of form data as input.
+Merges the form data with a timestamp, a default status of 'new', and a unique ID generated using uniqid().
+Calls the insert() method from the parent JsonStorage class to save the submission.
+Returns a boolean indicating success or failure.
+getSubmissions(): array:
+Retrieves all contact submissions by calling the findAll() method from the parent class.
+Returns an array of submissions.
+getSubmissionById(string $id): ?array:
+Accepts a submission ID as input.
+Calls the findById() method from the parent class to retrieve a specific submission.
+Returns the submission data or null if not found.
+updateSubmissionStatus(string $id, string $status): bool:
+Accepts a submission ID and a new status as input.
+Retrieves the submission using findById().
+If the submission exists, updates its status and calls the update() method from the parent class to save the changes.
+Returns a boolean indicating success or failure.
+Summary of Findings
+The ContactStorage.php file is well-structured and modular, focusing on managing contact form submissions.
+The class encapsulates functionality for saving, retrieving, and updating submissions, promoting maintainability and reusability.
+The use of a unique ID and timestamp for each submission enhances data tracking and management.
+By extending the JsonStorage class, it leverages existing functionality for JSON file operations, simplifying the implementation.
+
+
+
+
+/src
+│
+└── /Classes
+    └── /Exceptions
+        └── ValidationException.php
+
+File Summary: ValidationException.php
+Purpose
+The ValidationException.php file defines the ValidationException class, which extends the base Exception class to handle validation errors in a structured way. This class is particularly useful for managing form validation errors in applications.
+Key Features and Functionality
+Namespace and Dependencies:
+The class is defined under the Classes\Exceptions namespace.
+It extends the built-in Exception class and implements the Throwable interface.
+Protected Property:
+$errors: An array that holds validation error messages associated with specific fields.
+Constructor:
+The constructor accepts a message (which can be a string or an array), a code, and an optional previous throwable.
+If the message is an array, it populates the $errors property and converts the array into a comma-separated string for the exception message.
+4. Public Methods:
+getErrors(): array: Returns the array of validation errors.
+hasError(string $field): bool: Checks if there is an error for a specific field.
+getError(string $field): ?string: Retrieves the error message for a specific field, returning null if no error exists.
+addError(string $field, string $message): void: Adds an error message for a specific field to the $errors array.
+getFormattedErrors(): string: Returns all errors as a formatted string. If there are no errors, it returns the main exception message. The formatted string lists each field and its corresponding error message.
+Summary of Findings
+The ValidationException.php file is well-structured and modular, focusing on handling validation errors in a user-friendly manner.
+The class provides a clear interface for managing multiple validation errors, making it easier to handle form submissions and provide feedback to users.
+The ability to add errors dynamically and retrieve them in a formatted manner enhances the usability of the class in various contexts, such as form validation and API responses.
+By extending the base Exception class, it integrates seamlessly with PHP's exception handling mechanisms.
+
+
+
+
+
+/src
+│
+└── /Classes
+    └── /Meeting
+        ├── Calendar.php
+        ├── MeetingConfig.php
+        ├── MeetingScheduler.php
+        └── ValidationException.php
+
+
+File Summaries
+Calendar.php
+Purpose: Manages the scheduling of meetings by generating available time slots based on business hours, holidays, and exceptions.
+Key Features:
+Defines business hours, lunch breaks, and holidays.
+Generates time slots for a given day while considering lunch breaks and holidays.
+Updates available slots and saves them to a JSON file.
+Provides methods to reserve and release slots, check availability, and retrieve slot details.
+2. MeetingConfig.php
+Purpose: Contains configuration settings for different types of meetings.
+Key Features:
+Defines various meeting types and their descriptions and durations.
+Provides methods to validate meeting types and check if a meeting is virtual.
+Maps meeting types to specific providers (e.g., Zoom, Google Meet).
+3. MeetingScheduler.php
+Purpose: Handles the scheduling of meetings, including validation, creation, updating, and cancellation of meetings.
+Key Features:
+Validates meeting data to ensure all required fields are present and valid.
+Creates meeting records and sets up meetings with providers.
+Manages the cancellation and rescheduling of meetings, including releasing and reserving time slots.
+Logs activities related to meetings and retrieves user-specific meetings.
+4. ValidationException.php
+Purpose: Custom exception class for handling validation errors related to meetings.
+Key Features:
+Extends the base Exception class to provide a specific exception type for validation errors.
+Allows for custom error messages and codes.
+Summary of Findings
+The src/Classes/Meeting directory is well-structured, focusing on managing meeting scheduling and configurations.
+Each class encapsulates specific functionality, promoting modularity and maintainability.
+The Calendar.php class effectively manages time slots, considering business hours and exceptions, which enhances the scheduling process.
+The MeetingScheduler.php class provides comprehensive methods for scheduling, validating, and managing meetings, ensuring a smooth user experience.
+The use of a custom exception class (ValidationException.php) allows for better error handling and clarity in the code.
+
+
+/src
+│
+└── /Classes
+    └── /Middleware
+        └── RateLimiter.php
+
+
+File Summary: RateLimiter.php
+Purpose
+The RateLimiter.php file defines the RateLimiter class, which is responsible for limiting the number of requests a user can make to the application within a specified time window. This is useful for preventing abuse and ensuring fair usage of resources.
+Key Features and Functionality
+1. Namespace and Dependencies:
+The class is defined under the Classes\Middleware namespace.
+It uses the Predis\Client for interacting with a Redis database to store request counts.
+Private Properties:
+$redis: An instance of the Redis client.
+$maxRequests: The maximum number of requests allowed within the time window (default is 60).
+$timeWindow: The duration (in seconds) for which the request count is tracked (default is 60 seconds).
+Constructor:
+Initializes the Redis client using connection parameters from environment variables or defaults to 127.0.0.1:6379.
+Catches and logs any exceptions that occur during initialization.
+Public Method: check:
+check(string $ip): bool: This method checks the request count for a given IP address.
+Constructs a Redis key based on the IP address.
+Retrieves the current request count from Redis.
+If no count exists, it initializes the count and sets an expiration time.
+If the count exceeds the maximum allowed requests, it returns false.
+If the count is within limits, it increments the count and returns true.
+Catches and logs any exceptions, allowing legitimate traffic to pass through even if an error occurs.
+Summary of Findings
+The RateLimiter.php file is well-structured and modular, focusing on managing request limits to prevent abuse.
+The use of Redis for tracking request counts allows for efficient storage and retrieval, making the rate limiting process fast and scalable.
+The class is designed to fail open, meaning that in the event of an error, it allows requests to proceed rather than blocking legitimate traffic, which is a good practice in rate limiting.
+The implementation provides a clear and straightforward interface for checking request limits based on IP addresses.
+
+
+/src
+│
+└── /Classes
+    └── /Notifications
+        └── SecurityNotification.php
+
+File Summary: SecurityNotification.php
+Purpose
+The SecurityNotification.php file defines the SecurityNotification class, which is responsible for managing security-related notifications for users. This includes creating notifications for events such as new logins, password changes, and failed login attempts.
+Key Features and Functionality
+Namespace and Dependencies:
+The class is defined under the Classes\Notifications namespace.
+It uses the JsonStorage class for handling storage of notifications in a JSON file and the User model for user-related operations.
+Private Properties:
+$storage: An instance of the JsonStorage class, which manages the storage of notifications in a JSON file (notifications.json).
+$user: An instance of the User class, used for user-related operations.
+Notification Types:
+Constants are defined for various notification types, including:
+NEW_LOGIN
+PASSWORD_CHANGED
+FAILED_LOGIN_ATTEMPT
+TWO_FA_DISABLED
+SECURITY_SETTINGS_CHANGED
+Constructor:
+Initializes the JsonStorage and User instances.
+5. Public Methods:
+create($userId, $type, $data = []):
+Creates a new notification with a unique ID, user ID, type, data, timestamp, read status, and priority.
+Saves the notification to the JSON storage and logs the creation event.
+Returns the created notification.
+getUnread($userId):
+Retrieves all unread notifications for a specific user.
+Returns an array of unread notifications.
+markAsRead($notificationId, $userId):
+Marks a specific notification as read for a user and updates the read timestamp.
+Saves the updated notifications back to the JSON storage.
+getNotificationMessage($notification):
+Generates a user-friendly message based on the notification type and data.
+Formats the message with the notification's creation time.
+cleanup():
+Removes notifications that are older than 30 days from the storage.
+Saves the cleaned-up notifications back to the JSON storage.
+Private Methods:
+getPriority($type):
+Determines the priority level of a notification based on its type (high, medium, low).
+Summary of Findings
+The SecurityNotification.php file is well-structured and modular, focusing on managing security notifications for users.
+The class provides a clear interface for creating, retrieving, marking, and cleaning up notifications, promoting maintainability and reusability.
+The use of constants for notification types enhances code readability and reduces the risk of errors.
+The integration of a cleanup method ensures that the notification storage remains manageable by removing outdated notifications.
+The class effectively logs significant security events, which can be crucial for user awareness and security audits.
+
+
+
+/src
+│
+└── /Classes
+    └── /Report
+        └── CostReportGenerator.php
+
+
+File Summary: CostReportGenerator.php
+Purpose
+The CostReportGenerator.php file defines the CostReportGenerator class, which is responsible for generating a PDF report detailing the costs associated with vehicle imports. It utilizes the FPDF library to create and format the PDF document.
+Key Features and Functionality
+1. Namespace and Dependencies:
+The class is defined under the Classes\Report namespace.
+It extends the FPDF class, which is a popular PHP library for generating PDF documents.
+Private Properties:
+$reportData: An array that holds the data used to generate the report.
+$currency: A string representing the currency used in the report (default is 'USD').
+3. Constructor:
+Calls the parent constructor of FPDF to initialize the PDF document.
+Sets automatic page breaks and adds the first page.
+4. Public Method: generateReport:
+generateReport(array $calculationData, array $metadata): string:
+Accepts calculation data and metadata as input.
+Stores the calculation data in the $reportData property.
+Calls various private methods to add sections to the report (header, cost summary, detailed breakdown, exchange rates, and footer).
+Generates a unique filename for the report and saves it to a specified path.
+Returns the filename of the generated report.
+5. Private Methods:
+addReportHeader(array $metadata): void: Adds the report header, including the title, generation date, and reference number.
+addCostSummary(): void: Adds a summary of the total import cost to the report.
+addDetailedBreakdown(): void: Adds a detailed breakdown of costs, including vehicle cost, shipping cost, and customs duty.
+addExchangeRates(): void: Adds exchange rate information if available in the report data.
+addFooter(): void: Adds a footer note to the report.
+formatCurrency(float $amount): string: Formats a given amount as a currency string.
+getReportPath(string $filename): string: Generates the file path for saving the report, creating the directory if it does not exist.
+Summary of Findings
+The CostReportGenerator.php file is well-structured and modular, focusing on generating detailed cost reports for vehicle imports.
+The class encapsulates functionality for creating a PDF report, making it easy to manage and extend.
+The use of the FPDF library allows for flexible and customizable PDF generation.
+The report includes various sections that provide a comprehensive overview of costs, making it useful for users involved in vehicle imports.
+The implementation of currency formatting and exchange rates enhances the report's usability and clarity.
+
+
+/src
+│
+└── /Classes
+    └── /Search
+        └── SearchTracker.php
+
+
+File Summary: SearchTracker.php
+Purpose
+The SearchTracker.php file defines the SearchTracker class, which is responsible for tracking and managing popular search terms used by users in the application. It utilizes session storage to keep track of search frequency.
+Key Features and Functionality
+1. Namespace and Dependencies:
+The class is defined under the Classes\Search namespace.
+It uses the Session class from the Classes\Auth namespace to manage session data.
+Private Properties:
+$session: An instance of the Session class, used to access session data.
+$maxPopular: An integer that defines the maximum number of popular searches to display (default is 5).
+3. Constructor:
+Initializes the session instance and calls the initSearches method to set up the popular searches in the session.
+4. Private Method: initSearches:
+Checks if the popular_searches key exists in the session. If not, it initializes it as an empty array.
+Public Method: trackSearch:
+trackSearch(string $term):
+Accepts a search term as input.
+Normalizes the term by converting it to lowercase and trimming whitespace.
+Increments the count for the term if it already exists in the session; otherwise, it initializes the count to 1.
+Updates the session with the modified searches array.
+6. Public Method: getPopularSearches:
+getPopularSearches(): array:
+Retrieves the popular_searches array from the session.
+Sorts the searches in descending order based on their count using arsort().
+Returns the top $maxPopular searches as an associative array, preserving the keys.
+Summary of Findings
+The SearchTracker.php file is well-structured and modular, focusing on tracking user search terms and their popularity.
+The class effectively manages session data to keep track of search frequency, providing a simple interface for tracking and retrieving popular searches.
+The use of normalization (lowercasing and trimming) ensures that search terms are consistent, preventing duplicates due to case differences or extra spaces.
+The implementation of sorting and limiting the number of popular searches enhances the user experience by providing relevant search suggestions.
+
+
+
+/src
+│
+└── /Classes
+    └── /Security
+        ├── ActivityLogger.php
+        ├── CSRF.php
+        ├── RateLimiter.php
+        ├── SecurityEvents.php
+        ├── SecurityLogger.php
+        ├── SecurityNotification.php
+        └── TwoFactorAuth.php
+
+
+
+File Summaries
+ActivityLogger.php
+Purpose: Manages logging of user activities such as logins, logouts, and profile updates.
+Key Features:
+Logs activities with details like user ID, activity type, IP address, and user agent.
+Stores logs in a JSON file (user_activities.json).
+Provides methods to retrieve user activities and generate descriptions for logged activities.
+CSRF.php
+Purpose: Handles Cross-Site Request Forgery (CSRF) protection.
+Key Features:
+Generates and validates CSRF tokens to protect against CSRF attacks.
+Ensures a token is present in the session upon instantiation.
+Provides methods to retrieve and validate tokens, logging the process for debugging.
+3. RateLimiter.php
+Purpose: Implements rate limiting to prevent abuse by limiting the number of requests a user can make in a specified time frame.
+Key Features:
+Tracks request attempts and resets counts after a decay period.
+Stores rate limit data in a JSON file (rate_limits.json).
+Provides methods to hit the rate limit, check for too many attempts, and clear records.
+SecurityEvents.php
+Purpose: Defines constants for various security-related events in the application.
+Key Features:
+Includes event types for authentication, two-factor authentication, password changes, email verification, and session management.
+Serves as a centralized reference for event types used throughout the security system.
+SecurityLogger.php
+Purpose: Logs security events to a JSON file (security_logs.json).
+Key Features:
+Records events with details such as timestamp, event type, user ID, IP address, and additional data.
+Provides methods to retrieve logs, filter by criteria, and clear old logs.
+6. SecurityNotification.php
+Purpose: Manages security notifications for users, such as new logins and changes to security settings.
+Key Features:
+Creates notifications with details like user ID, type, and additional data.
+Stores notifications in a JSON file (security_notifications.json).
+7. TwoFactorAuth.php
+Purpose: Manages two-factor authentication (2FA) for users.
+Key Features:
+Sets up 2FA by generating a secret key and backup codes.
+Verifies user-provided codes against the generated secret.
+Provides methods for enabling and verifying 2FA for users, including generating codes and handling backup codes.
+Summary of Findings
+The src/Classes/Security directory is well-structured, focusing on various aspects of security management within the application.
+Each class encapsulates specific functionality, promoting modularity and maintainability.
+The use of JSON storage for logging and notifications allows for easy management and retrieval of security-related data.
+The implementation of CSRF protection, rate limiting, and two-factor authentication enhances the overall security posture of the application.
+The centralized definition of security events provides a clear reference for event handling and logging.
+
+
+/src
+│
+└── /Classes
+    └── /Storage
+        └── JsonStorage.php
+
+
+File Summary: JsonStorage.php
+Purpose
+The JsonStorage.php file defines the JsonStorage class, which provides a simple interface for storing, retrieving, updating, and deleting data in a JSON file. This class is useful for applications that require persistent storage without the complexity of a database.
+Key Features and Functionality
+1. Namespace and Dependencies:
+The class is defined under the Classes\Storage namespace.
+2. Private Properties:
+$filePath: A string that holds the path to the JSON file where data is stored.
+$data: An array that holds the data loaded from the JSON file.
+Constructor:
+Accepts a filename as a parameter and constructs the full path to the JSON file.
+Creates the directory for storing data if it does not exist.
+Initializes the data by loading it from the file or creating a new structure if the file does not exist.
+4. Public Methods:
+getFilePath(): Returns the file path of the JSON file.
+load(): Loads data from the JSON file into the $data property. If the file does not exist or is empty, it initializes an empty structure and saves it.
+save(): Saves the current data to the JSON file, ensuring that the items key is present.
+insert($item): Inserts a new item into the data array, assigning it a unique ID if not provided, and saves the updated data.
+update($id, $data): Updates an existing item by ID with new data and saves the changes.
+findById($id): Retrieves an item by its ID.
+findByField($field, $value): Finds an item by a specific field and value.
+getNextId(): Generates the next unique ID based on existing items.
+delete($id): Deletes an item by its ID and saves the updated data.
+truncate(): Clears all items from the storage and saves the empty structure.
+findAll(): Returns all items in the storage.
+getAll(): Loads and returns all items from the storage.
+create(array $data): Adds a new item to the storage, handling exceptions and logging errors.
+Summary of Findings
+The JsonStorage.php file is well-structured and modular, focusing on providing a simple interface for JSON data storage.
+The class encapsulates functionality for loading, saving, inserting, updating, and deleting data, promoting maintainability and reusability.
+The use of unique IDs for items ensures that each entry can be easily identified and managed.
+The implementation of error handling in the create method enhances robustness by logging issues without crashing the application.
+Overall, this class provides a lightweight and effective solution for applications that require persistent storage without the overhead of a full database system.
+
+
+
+/src
+│
+└── /Classes
+    └── /User
+        ├── Favorites.php
+        ├── User.php
+        └── UserProfile.php
+
+
+File Summaries
+Favorites.php
+Purpose: Manages user favorites, allowing users to add, remove, and retrieve their favorite listings.
+Key Features:
+Loads and saves favorite data from/to a JSON file (favorites.json).
+Provides methods to add a favorite listing, remove a favorite, check if a listing is a favorite, and retrieve all favorite listings for a user.
+Ensures that duplicate favorites cannot be added and updates the timestamp when favorites are modified.
+User.php
+Purpose: Represents a user in the application, handling user-related operations such as authentication and user data management.
+Key Features:
+Manages user registration, login, and logout processes.
+Validates user credentials and retrieves user data from a data source (e.g., a database or JSON file).
+Provides methods for updating user information and managing user sessions.
+3. UserProfile.php
+Purpose: Manages user profile information, allowing users to view and update their profiles.
+Key Features:
+Loads user profile data from a data source.
+Provides methods to update user profile information, such as name, email, and preferences.
+Validates input data to ensure that updates are performed correctly.
+Summary of Findings
+The src/Classes/User directory is well-structured, focusing on managing user-related functionality within the application.
+Each class encapsulates specific functionality, promoting modularity and maintainability.
+The Favorites.php class effectively manages user favorites, ensuring that users can easily add and remove listings while preventing duplicates.
+The User.php class provides essential user management features, including authentication and data retrieval.
+The UserProfile.php class enhances user experience by allowing users to manage their profile information seamlessly.
+
+/src
+│
+└── /Classes
+    └── /Validation
+        ├── RequestValidator.php
+        └── Validation.php
+
+
+File Summaries
+1. RequestValidator.php
+Purpose: This class is designed to validate incoming request data based on specified rules. It provides a flexible way to define validation rules for various fields in a request.
+Key Features:
+Constructor: Accepts an array of rules that define the validation criteria for each field.
+validate() Method: Validates the provided data against the defined rules. It iterates through each field and applies the corresponding rules, collecting any errors encountered during validation.
+validateField() Method: Handles the actual validation logic for each field based on the specified rule (e.g., required, numeric, min, in). It returns true if the validation passes and false otherwise.
+getErrors() Method: Returns an array of validation errors, allowing the caller to access specific error messages for each field.
+Validation.php
+Purpose: This class provides a more general validation framework, allowing for various validation rules to be applied to data. It is designed to be extensible, enabling the addition of new validation methods as needed.
+Key Features:
+validate() Method: Accepts data and rules, iterating through each field and applying the corresponding validation methods. It collects errors for any failed validations.
+Validation Methods: Includes methods for common validation rules such as required, email, min length, max length, match, and pattern. Each method checks the value against the specified criteria and returns true or false.
+addError() Method: Adds an error message to the errors array for a specific field when validation fails.
+getErrors() Method: Returns the collected validation errors.
+hasErrors() Method: Checks if there are any validation errors present.
+Summary of Findings
+The src/Classes/Validation directory is well-structured, focusing on providing robust validation functionality for incoming request data.
+The RequestValidator.php class offers a straightforward way to validate request data against predefined rules, making it easy to enforce data integrity.
+The Validation.php class provides a more flexible and extensible validation framework, allowing for the addition of custom validation rules and methods.
+Both classes effectively manage validation errors, providing clear feedback to users or developers about what went wrong during validation.
+The separation of concerns between the two classes allows for better organization and maintainability of the validation logic within the application.
+
+
+/src
+│
+└── /Models
+    └── User.php
+
+
+File Summary: User.php
+Purpose
+The User.php file defines the User class, which is responsible for managing user-related operations such as creating, updating, deleting, and authenticating users. It also handles user data storage using a JSON file.
+Key Features and Functionality
+1. Namespace and Dependencies:
+The class is defined under the Models namespace.
+It uses the JsonStorage class from the Classes\Storage namespace for data persistence and the Exception class for error handling.
+2. Private Properties:
+$storage: An instance of the JsonStorage class, which manages user data storage in a JSON file (users.json).
+$validationRules: An array defining validation rules for user attributes such as name, email, and password.
+3. Constructor:
+Initializes the JsonStorage instance for user data storage.
+4. Public Methods:
+create($data): Validates input data and creates a new user. It hashes the password and stores the user data in the JSON file. Returns success status and user data or error messages.
+findById($id): Retrieves a user by their ID from the storage.
+findByEmail($email): Searches for a user by their email address and returns the user data if found.
+update($id, array $data): Updates user information based on the provided ID and data. Validates the fields being updated and saves the changes to storage.
+delete($id): Deletes a user by their ID from the storage.
+verifyEmail($id): Marks a user’s email as verified and updates the verification timestamp.
+updatePassword($id, $newPassword): Updates the user’s password after hashing it.
+authenticate($email, $password): Authenticates a user by checking their email and password. Returns success status and user data or error messages.
+enable2FA($userId): Enables two-factor authentication for a user.
+disable2FA($userId): Disables two-factor authentication for a user.
+has2FAEnabled($userId): Checks if two-factor authentication is enabled for a user.
+logSecurityEvent($event_type, $data = [], $user_id = null): Logs security events related to user actions.
+isAdmin($user_id): Checks if a user has admin privileges.
+5. Private Method: validate(array $data, $isUpdate = false):
+Validates user data against the defined validation rules. Returns an array of errors if validation fails.
+Summary of Findings
+The User.php file is well-structured and modular, focusing on user management within the application.
+The class encapsulates functionality for creating, updating, deleting, and authenticating users, promoting maintainability and reusability.
+The use of validation rules ensures that user data is consistent and meets specified criteria before being processed.
+The integration of two-factor authentication and security event logging enhances the security features of the user management system.
+Overall, this class provides a comprehensive solution for managing user data and operations in the application.
+
+
+
+/src
+│
+└── /Services
+    ├── CacheManager.php
+    ├── CacheManagerInterface.php
+    ├── EmailService.php
+    ├── EmailVerificationService.php
+    ├── ExchangeRateService.php
+    ├── ExchangeRateServiceInterface.php
+    ├── FeasibilityAnalyzer.php
+    ├── FileUploadService.php
+    ├── NotificationService.php
+    ├── PermissionService.php
+    ├── SecurityService.php
+    ├── SessionService.php
+    ├── TwoFactorAuth.php
+    ├── UserActivityLogger.php
+    ├── UserProfileService.php
+    └── ValidationService.php
+
+
+File Summaries
+CacheManager.php
+Purpose: Manages caching using Redis to store and retrieve data efficiently.
+Key Features:
+Connects to a Redis server and provides methods to get, set, check existence, delete, and clear cache.
+Implements retry logic for setting cache values in case of transient errors.
+2. CacheManagerInterface.php
+Purpose: Defines the interface for the CacheManager, outlining the methods that must be implemented.
+Key Features:
+Methods for retrieving, storing, checking, deleting, and clearing cache items.
+3. EmailService.php
+Purpose: Handles sending emails, including validation and template management.
+Key Features:
+Loads email configuration and templates, validates email data, and sends emails using the PHP mail() function.
+Includes a method for sending password reset emails.
+EmailVerificationService.php
+Purpose: Manages the process of sending email verification links to users.
+Key Features:
+Generates a verification token, updates the user record, and sends a verification email with a link.
+5. ExchangeRateService.php
+Purpose: Provides currency conversion and exchange rate retrieval.
+Key Features:
+Caches exchange rates for a specified time and fetches rates from a predefined set of values.
+Implements conversion logic between different currencies.
+6. ExchangeRateServiceInterface.php
+Purpose: Defines the interface for the ExchangeRateService, specifying methods for currency conversion and rate retrieval.
+FeasibilityAnalyzer.php
+Purpose: Analyzes the feasibility of a project based on market size, competition, and risk factors.
+Key Features:
+Validates input data, performs market analysis, risk assessment, and calculates a feasibility score.
+FileUploadService.php
+Purpose: Manages file uploads, including validation and storage.
+Key Features:
+Validates file types and sizes, uploads files to a specified directory, and handles errors.
+NotificationService.php
+Purpose: Sends notifications to users through various channels (e.g., email, in-app).
+Key Features:
+Stores notifications in a JSON file and provides methods to send notifications and mark them as read.
+PermissionService.php
+Purpose: Manages user roles and permissions within the application.
+Key Features:
+Initializes default roles, checks user permissions, assigns roles, and creates or updates roles.
+SecurityService.php
+Purpose: Logs user activities and manages security-related features such as IP blocking and device history.
+Key Features:
+Logs user actions, checks for suspicious activity, and manages blocked IPs based on failed attempts.
+12. SessionService.php
+Purpose: Manages user sessions, including creation, validation, and termination.
+Key Features:
+Creates sessions, checks session validity, and handles session termination, including logging activities.
+TwoFactorAuth.php
+Purpose: Manages two-factor authentication for users.
+Key Features:
+Sets up 2FA, verifies codes, generates backup codes, and handles secret management.
+14. UserActivityLogger.php
+Purpose: Logs user activities for tracking and auditing purposes.
+Key Features:
+Stores activity logs in a JSON file and provides methods to retrieve user activities.
+15. UserProfileService.php
+Purpose: Manages user profile updates, including avatar uploads and settings changes.
+Key Features:
+Validates profile data, updates user information, and handles avatar uploads.
+16. ValidationService.php
+Purpose: Provides validation for user input data based on defined rules.
+Key Features:
+Validates required fields, email formats, string lengths, and other criteria, returning errors if validation fails.
+Summary of Findings
+The src/Services directory is well-structured, focusing on various aspects of service management within the application.
+Each class encapsulates specific functionality, promoting modularity and maintainability.
+The services provide essential features such as caching, email handling, user notifications, and security management, contributing to a robust application architecture.
+The use of interfaces for services like CacheManager and ExchangeRateService enhances flexibility and allows for easier testing and implementation of alternative caching or exchange rate mechanisms.
+
+
+/src
+│
+└── /Traits
+    └── ResponseTrait.php
+
+File Summary: ResponseTrait.php
+Purpose
+The ResponseTrait.php file defines the ResponseTrait trait, which provides methods for standardizing API responses in a JSON format. This trait can be used in various classes to ensure consistent response formatting across the application.
+Key Features and Functionality
+Trait Definition:
+The trait is defined using the trait keyword, allowing it to be reused in multiple classes.
+Protected Methods:
+success($message, $data = [], $code = 200):
+This method is used to generate a successful response.
+It accepts a message, optional data, and an HTTP status code (default is 200).
+Calls the private respond method with true for the success parameter.
+error($message, $data = [], $code = 400):
+This method is used to generate an error response.
+It accepts a message, optional data, and an HTTP status code (default is 400).
+Calls the private respond method with false for the success parameter.
+3. Private Method:
+respond($success, $message, $data = [], $code = 200):
+This method handles the actual response generation.
+Sets the HTTP response code using http_response_code($code).
+Sets the content type to application/json using the header function.
+Encodes the response data as a JSON object containing:
+success: A boolean indicating the success of the operation.
+message: A message providing additional context.
+data: Any additional data to be returned.
+Outputs the JSON response and terminates the script with exit.
+Summary of Findings
+The ResponseTrait.php file is well-structured and modular, focusing on providing a consistent way to handle API responses.
+The use of a trait allows for easy reuse of response methods across different classes, promoting code DRYness (Don't Repeat Yourself).
+The success and error methods provide a clear interface for generating responses, making it easy for developers to return standardized JSON responses.
+The private respond method centralizes the response formatting logic, ensuring that all responses adhere to the same structure and content type.
+
+
+/src
+│
+└── /User
+    ├── Favorites.php
+    ├── User.php
+    └── UserProfile.php
+
+File Summaries
+Favorites.php
+Purpose: Manages user favorites, allowing users to add, remove, and retrieve their favorite listings.
+Key Features:
+Constructor: Initializes the JsonStorage instance for storing favorites in favorites.json and loads existing data.
+addFavorite($userId, $listingId): Adds a listing to the user's favorites if it is not already favorited. Updates the timestamp and saves the data.
+removeFavorite($userId, $listingId): Removes a listing from the user's favorites if it exists. Updates the timestamp and saves the data.
+getFavorites($userId): Retrieves all favorite listings for a specific user.
+isFavorite($userId, $listingId): Checks if a specific listing is in the user's favorites.
+2. User.php
+Purpose: Represents a user in the application, handling user-related operations such as authentication and user data management.
+Key Features:
+Manages user registration, login, and logout processes.
+Validates user credentials and retrieves user data from a data source (e.g., a database or JSON file).
+Provides methods for updating user information and managing user sessions.
+3. UserProfile.php
+Purpose: Manages user profile information, allowing users to view and update their profiles.
+Key Features:
+Loads user profile data from a data source.
+Provides methods to update user profile information, such as name, email, and preferences.
+Validates input data to ensure that updates are performed correctly.
+Summary of Findings
+The src/User directory is well-structured, focusing on managing user-related functionality within the application.
+The Favorites.php class effectively manages user favorites, ensuring that users can easily add and remove listings while preventing duplicates.
+The User.php class provides essential user management features, including authentication and data retrieval.
+The UserProfile.php class enhances user experience by allowing users to manage their profile information seamlessly.
+Overall, the classes in this directory work together to provide a comprehensive user management system, enhancing the functionality and usability of the application.
+
+
+
+
+/src
+│
+└──bootstrap.php
+
+
+File Summary: bootstrap.php
+Purpose
+The bootstrap.php file is responsible for initializing the application environment, setting up configurations, loading necessary dependencies, and preparing the application for execution. It handles session management, error reporting, environment variable loading, directory initialization, and file creation for data storage.
+Key Features and Functionality
+1. Session Management:
+Starts a session using session_start() to maintain user sessions throughout the application.
+2. Error Reporting:
+Sets error reporting to display all errors during development with error_reporting(E_ALL) and ini_set('display_errors', 1).
+Autoloading:
+Requires the Composer autoload file to automatically load classes from the vendor directory.
+Environment Variables:
+Loads environment variables from a .env file if it exists, allowing for configuration settings to be easily managed.
+Timezone Setting:
+Sets the default timezone to UTC using date_default_timezone_set('UTC').
+6. Directory Initialization:
+Initializes necessary directories for logs, data, and cache storage. It checks if these directories exist and creates them if they do not.
+File Initialization:
+Checks for the existence of several JSON files (e.g., users.json, security_logs.json, rate_limits.json, password_resets.json) and initializes them with default values if they do not exist.
+Constants Definition:
+Defines constants for the base directory (BASE_PATH) and features path (FEATURES_PATH), which are used throughout the application.
+Feature Scanning:
+Implements a function scanFeatures() to scan the features directory and retrieve active features.
+Initializes a features registry file (features_registry.json) to keep track of active features and the last scan time.
+Feature Helper Functions:
+Provides helper functions isFeatureEnabled($featureName) and refreshFeaturesRegistry() to manage feature states and refresh the registry.
+Human Time Difference Function:
+Implements a function human_time_diff($timestamp) to convert a timestamp into a human-readable format, indicating how long ago an event occurred.
+Test Directory Setup:
+Initializes directories for unit, integration, and feature tests, ensuring that the testing structure is in place.
+Cache Manager Initialization:
+Uses the CacheManager class from the Classes\Cache namespace, preparing it for use in the application.
+Summary of Findings
+The bootstrap.php file is crucial for setting up the application environment and ensuring that all necessary components are initialized before the application runs.
+It effectively manages session handling, error reporting, and environment configuration, which are essential for a robust application.
+The initialization of directories and files ensures that the application has a structured way to store data and logs, promoting maintainability.
+The feature scanning and management functions provide flexibility in enabling or disabling features dynamically, enhancing the application's adaptability.
+Overall, this file serves as the foundation for the application, ensuring that all components are properly configured and ready for use.
+
+

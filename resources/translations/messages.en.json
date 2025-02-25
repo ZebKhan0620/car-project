@@ -1,0 +1,864 @@
+{
+    "common": {
+        "welcome": "Car Marketplace",
+        "language": "Language",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "profile": "Profile",
+        "settings": "Settings",
+        "home": "Home",
+        "browse": "Browse Cars",
+        "calculators": "Calculators",
+        "services": "Services",
+        "contact": "Contact",
+        "new": "New",
+        "meta": {
+            "title": "Car Marketplace",
+            "description": "Car Marketplace - Find your perfect vehicle"
+        },
+        "yes": "Yes",
+        "no": "No",
+        "not_available": "N/A",
+        "date_format": "F j, Y",
+        "time_format": "H:i"
+    },
+    "hero": {
+        "title": "Find Your Dream Car",
+        "description": "Search from thousands of cars, trucks, and SUVs for sale. Find the perfect vehicle that matches your style and budget.",
+        "search": {
+            "placeholder": "Search by brand, model, or keyword",
+            "button": "Search",
+            "all_locations": "All Locations"
+        },
+        "popular": {
+            "label": "Popular:",
+            "no_searches": "No searches yet"
+        },
+        "stats": {
+            "listings": {
+                "title": "Total Listings",
+                "value": "2,500+"
+            },
+            "dealers": {
+                "title": "Active Dealers",
+                "value": "150+"
+            },
+            "customers": {
+                "title": "Happy Customers",
+                "value": "10K+"
+            }
+        },
+        "car_card": {
+            "featured": "Featured",
+            "available": "Available Now",
+            "view_details": "View Details",
+            "no_cars": {
+                "title": "No Cars Found",
+                "description": "Try adjusting your search criteria"
+            }
+        }
+    },
+    "cars": {
+        "search": "Cars",
+        "search_placeholder": "Search cars...",
+        "featured": "Featured Cars",
+        "latest": "Latest Listings",
+        "add_listing": "Add Listing",
+        "my_listings": "My Listings",
+        "drafts": "Drafts",
+        "favorites": "Favorites",
+        "import": "Import Cars",
+        "export": "Export Cars",
+        "inspection": "Car Inspection",
+        "sell": "Sell",
+        "price": "Price",
+        "browse": "Browse Cars",
+        "calculators": "Calculators",
+        "year": "Year",
+        "mileage": "Mileage",
+        "condition": "Condition",
+        "location": "Location",
+        "warranty": "Warranty",
+        "transmission": "Transmission",
+        "gallery_image": {
+            "title": "Car Image",
+            "thumbnail": "Thumbnail",
+            "previous": "Previous Image",
+            "next": "Next Image",
+            "rotate": "Rotate Image",
+            "fullscreen": "Toggle Fullscreen",
+            "no_images": "No images available"
+        },
+        "listed_time": "Listed {time}",
+        "view_count": "{count} views",
+        "key_features": "Key Features",
+        "description": "Description",
+        "no_description": "No description available.",
+        "view_full_details": "View Full Details",
+        "featured_cars": {
+            "title": "Featured Vehicles",
+            "subtitle": "Discover our hand-picked selection of premium vehicles",
+            "view_toggle": {
+                "grid": "Grid View",
+                "list": "List View"
+            },
+            "filters": {
+                "brand": "Brand",
+                "all_brands": "All Brands",
+                "price_range": "Price Range",
+                "min_price": "Min",
+                "max_price": "Max",
+                "year_range": "Year",
+                "year_from": "From",
+                "year_to": "To",
+                "condition": "Condition",
+                "any_condition": "Any Condition",
+                "reset": "Reset",
+                "apply": "Apply Filters"
+            },
+            "compare": {
+                "title": "Compare Cars",
+                "add_car": "Add Car",
+                "clear_all": "Clear All",
+                "compare_now": "Compare Now",
+                "max_cars": "You can compare up to 3 vehicles at a time",
+                "quick_view": "Quick View",
+                "save": "Save",
+                "remove": "Remove"
+            },
+            "market_value": {
+                "title": "Market Value Comparison",
+                "vs_market": "vs market",
+                "price_difference": "This vehicle is priced {status} similar listings by {percentage}%",
+                "at_market_price": "Price is at market average"
+            },
+            "stats": {
+                "showing_results": "Showing {count} featured vehicles out of {total} total listings",
+                "browse_all": "Browse All Vehicles",
+                "no_results_query": "No cars found matching \"{query}\"",
+                "no_listings": "No car listings available at the moment.",
+                "found_listings": "Found {count} listings",
+                "item_sold": "This item has been sold"
+            },
+            "sort": {
+                "latest": "Latest",
+                "price_low": "Price: Low to High",
+                "price_high": "Price: High to Low",
+                "year_new": "Year: Newest",
+                "popularity": "Most Popular"
+            },
+            "dropdowns": {
+                "all_brands": "All Brands",
+                "all_models": "All Models",
+                "select_brand": "Select Brand",
+                "select_model": "Select Model",
+                "model_placeholder": "Choose a brand first"
+            },
+            "conditions": {
+                "new": "New",
+                "like_new": "Like New",
+                "excellent": "Excellent",
+                "good": "Good",
+                "fair": "Fair",
+                "poor": "Poor",
+                "any": "Any Condition"
+            }
+        },
+        "compare": {
+            "no_cars_selected": "No cars selected for comparison",
+            "no_valid_cars": "No valid cars found for comparison",
+            "key_differences": "Key Differences",
+            "no_differences": "No significant differences found",
+            "overview": "Overview",
+            "vehicle": "Vehicle",
+            "market_value": "Market Value",
+            "market_average": "Market Average",
+            "condition_score": "Condition Score",
+            "basic_information": "Basic Information",
+            "body_type": "Body Type",
+            "seating_capacity": "Seating Capacity",
+            "seats": "seats",
+            "color": "Color",
+            "engine_performance": "Engine & Performance",
+            "engine": "Engine",
+            "horsepower": "Horsepower",
+            "fuel_type": "Fuel Type",
+            "fuel_economy": "Fuel Economy",
+            "drive_type": "Drive Type",
+            "dimensions_capacity": "Dimensions & Capacity",
+            "cargo_space": "Cargo Space",
+            "length": "Length",
+            "width": "Width",
+            "height": "Height",
+            "wheelbase": "Wheelbase",
+            "safety_features": "Safety Features",
+            "features_equipment": "Features & Equipment",
+            "additional_information": "Additional Information",
+            "vin": "VIN",
+            "registration": "Registration",
+            "last_service": "Last Service",
+            "differences": {
+                "price": "Price difference: ${difference}",
+                "mileage": "Mileage difference: {difference} km",
+                "year_range": "Year range: {from} - {to}"
+            },
+            "safety": {
+                "abs": "Anti-lock Braking System (ABS)",
+                "airbags": "Airbags",
+                "traction_control": "Traction Control",
+                "stability_control": "Stability Control",
+                "parking_sensors": "Parking Sensors",
+                "backup_camera": "Backup Camera",
+                "lane_departure_warning": "Lane Departure Warning"
+            },
+            "features": {
+                "navigation": "Navigation System",
+                "bluetooth": "Bluetooth",
+                "climate_control": "Climate Control",
+                "leather_seats": "Leather Seats",
+                "power_seats": "Power Seats",
+                "heated_seats": "Heated Seats",
+                "power_windows": "Power Windows",
+                "navigation_system": "Navigation System",
+                "android_auto": "Android Auto",
+                "abs": "Anti-lock Braking System (ABS)",
+                "airbags": "Airbags",
+                "traction_control": "Traction Control",
+                "stability_control": "Stability Control",
+                "backup_camera": "Backup Camera",
+                "sunroof": "Sunroof",
+                "cruise_control": "Cruise Control",
+                "apple_carplay": "Apple CarPlay",
+                "wireless_charging": "Wireless Charging"
+            }
+        },
+        "features": {
+            "ABS": "Anti-lock Braking System (ABS)",
+            "Airbags": "Airbags",
+            "Traction Control": "Traction Control",
+            "Stability Control": "Stability Control",
+            "Parking Sensors": "Parking Sensors",
+            "Backup Camera": "Backup Camera",
+            "Lane Departure Warning": "Lane Departure Warning",
+            "Air Conditioning": "Air Conditioning",
+            "Leather Seats": "Leather Seats",
+            "Heated Seats": "Heated Seats",
+            "Sunroof": "Sunroof",
+            "Power Windows": "Power Windows",
+            "Power Seats": "Power Seats",
+            "Cruise Control": "Cruise Control",
+            "Bluetooth": "Bluetooth",
+            "Navigation System": "Navigation System",
+            "USB Ports": "USB Ports",
+            "Apple CarPlay": "Apple CarPlay",
+            "Android Auto": "Android Auto",
+            "Premium Sound System": "Premium Sound System",
+            "Wireless Charging": "Wireless Charging"
+        },
+        "safety": {
+            "abs": "Anti-lock Braking System (ABS)",
+            "airbags": "Airbags",
+            "traction_control": "Traction Control",
+            "stability_control": "Stability Control",
+            "parking_sensors": "Parking Sensors",
+            "backup_camera": "Backup Camera",
+            "lane_departure_warning": "Lane Departure Warning"
+        },
+        "specifications": {
+            "engine_size": "Engine Size",
+            "horsepower": "Horsepower",
+            "transmission": "Transmission",
+            "fuel_type": "Fuel Type",
+            "fuel_economy": "Fuel Economy",
+            "drive_type": "Drive Type",
+            "seating_capacity": "Seating Capacity",
+            "cargo_space": "Cargo Space",
+            "dimensions": {
+                "length": "Length",
+                "width": "Width",
+                "height": "Height",
+                "wheelbase": "Wheelbase"
+            }
+        },
+        "status": {
+            "title": "Status",
+            "active": "Active",
+            "pending": "Pending",
+            "sold": "Sold",
+            "inactive": "Inactive"
+        },
+        "contact_info": {
+            "title": "Contact Information",
+            "name": "Name",
+            "phone": "Phone",
+            "email": "Email",
+            "preferred_method": "Preferred Contact Method"
+        },
+        "share": {
+            "title": "Share",
+            "copy_link": "Copy Link",
+            "copy_link_tooltip": "Copy listing URL to clipboard",
+            "social_media": "Social Media",
+            "whatsapp": "Share on WhatsApp",
+            "facebook": "Share on Facebook",
+            "twitter": "Share on Twitter",
+            "whatsapp_text": "Check out this {title} on Car Marketplace: {url}",
+            "twitter_text": "Found an amazing {title} on Car Marketplace! {url}",
+            "copied": "Link copied to clipboard!"
+        },
+        "schedule_viewing": {
+            "title": "Schedule a Viewing",
+            "button": "Schedule Viewing",
+            "meeting_type": "Meeting Type",
+            "date": "Preferred Date",
+            "time": "Preferred Time",
+            "select_time": "Select time slot",
+            "notes": "Additional Notes",
+            "submit": "Schedule Viewing",
+            "select_car": "Select a Car",
+            "select_car_placeholder": "Choose a car to schedule viewing",
+            "meeting_types": {
+                "video_call_zoom": "Zoom Video Call",
+                "video_call_skype": "Skype Video Call",
+                "video_call_gmeet": "Google Meet",
+                "dealership_visit": "In-Person Dealership Visit"
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "call_seller": "Call Seller",
+            "email_seller": "Email Seller",
+            "contact_seller": "Contact Seller"
+        },
+        "warranty_active": "Warranty Active",
+        "basic_information": "Basic Information",
+        "vehicle_details": "Vehicle Details",
+        "brand": "Brand",
+        "model": "Model",
+        "body_type": "Body Type",
+        "transmission": "Transmission",
+        "fuel_type": "Fuel Type",
+        "color": "Color",
+        "select_year": "Select Year",
+        "select_body_type": "Select Body Type",
+        "select_transmission": "Select Transmission",
+        "select_fuel_type": "Select Fuel Type",
+        "select_color": "Select Color",
+        "body_types": {
+            "Sedan": "Sedan",
+            "SUV": "SUV",
+            "Coupe": "Coupe",
+            "Hatchback": "Hatchback",
+            "Truck": "Truck",
+            "Van": "Van"
+        },
+        "transmissions": {
+            "Automatic": "Automatic",
+            "Manual": "Manual",
+            "CVT": "CVT"
+        },
+        "fuel_types": {
+            "Petrol": "Petrol",
+            "Diesel": "Diesel",
+            "Hybrid": "Hybrid",
+            "Electric": "Electric"
+        },
+        "colors": {
+            "white": "White",
+            "black": "Black",
+            "silver": "Silver",
+            "red": "Red",
+            "blue": "Blue"
+        },
+        "vehicle_images": {
+            "title": "Vehicle Images",
+            "dropzone": {
+                "message": "Drop files here or click to upload",
+                "max_files": "Maximum number of files reached",
+                "file_too_big": "File is too large",
+                "invalid_type": "Invalid file type"
+            }
+        },
+        "location_and_price": {
+            "title": "Location & Price",
+            "select_location": "Select Location",
+            "price_usd": "Price (USD)"
+        },
+        "locations": {
+            "tokyo": "Tokyo",
+            "osaka": "Osaka",
+            "nagoya": "Nagoya",
+            "fukuoka": "Fukuoka",
+            "sapporo": "Sapporo",
+            "sendai": "Sendai",
+            "yokohama": "Yokohama",
+            "kobe": "Kobe",
+            "dubai": "Dubai",
+            "japan": "Japan",
+            "philippines": "Philippines"
+        },
+        "description_section": {
+            "title": "Description",
+            "placeholder": "Enter a detailed description of your vehicle...",
+            "required": "Description*"
+        },
+        "specifications_section": {
+            "title": "Specifications",
+            "select_placeholder": "Select {field}",
+            "fields": {
+                "engine_size": {
+                    "label": "Engine Size",
+                    "placeholder": "Enter engine size"
+                },
+                "horsepower": {
+                    "label": "Horsepower",
+                    "placeholder": "Enter horsepower"
+                },
+                "doors": {
+                    "label": "Doors",
+                    "placeholder": "Select number of doors"
+                },
+                "seats": {
+                    "label": "Seats",
+                    "placeholder": "Select number of seats"
+                }
+            }
+        },
+        "features_section": {
+            "title": "Features",
+            "categories": {
+                "safety": "Safety",
+                "comfort": "Comfort",
+                "technology": "Technology"
+            }
+        },
+        "condition_section": {
+            "title": "Condition",
+            "select_condition": "Select Condition",
+            "conditions": {
+                "New": "New",
+                "Like New": "Like New",
+                "Excellent": "Excellent",
+                "Good": "Good",
+                "Fair": "Fair"
+            }
+        },
+        "contact_section": {
+            "title": "Contact Information",
+            "fields": {
+                "name": {
+                    "label": "Contact Name",
+                    "required": "Contact Name*"
+                },
+                "phone": {
+                    "label": "Contact Phone",
+                    "required": "Contact Phone"
+                },
+                "email": {
+                    "label": "Contact Email",
+                    "required": "Contact Email*"
+                },
+                "preferred_method": {
+                    "label": "Preferred Contact Method",
+                    "options": {
+                        "email": "Email",
+                        "phone": "Phone",
+                        "both": "Both"
+                    }
+                }
+            }
+        },
+        "additional_options": {
+            "title": "Additional Information",
+            "warranty": "Under Warranty",
+            "negotiable": "Price Negotiable",
+            "seller_notes": {
+                "label": "Seller Notes",
+                "placeholder": "Add any additional notes about the vehicle..."
+            }
+        },
+        "manage_listing": "Manage Listing",
+        "search_advanced": "Try Advanced Search",
+        "add_first_listing": "Add First Listing",
+        "favorites_empty": {
+            "title": "No Favorites Yet",
+            "description": "Start browsing cars and add them to your favorites!"
+        },
+        "favorites_added_date": "Added to favorites",
+        "favorites_added_recently": "Recently",
+        "browse_cars": "Browse Cars"
+    },
+    "forms": {
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "search": "Search",
+        "close": "Close"
+    },
+    "messages": {
+        "success": "Operation completed successfully",
+        "error": "An error occurred",
+        "confirm_delete": "Are you sure you want to delete this?",
+        "no_results": "No results found",
+        "loading": "Loading...",
+        "car_not_found": "Car not found",
+        "error": "An error occurred while loading car details"
+    },
+    "about_us": {
+        "hero": {
+            "title": "Elevating Your Car Journey",
+            "description": "Bridging continents through premium automotive excellence. We specialize in seamless international car trading, backed by industry veterans and cutting-edge technology to deliver an unmatched vehicle acquisition experience.",
+            "buttons": {
+                "learn_more": "Discover Our Process",
+                "contact_us": "Start Your Journey"
+            }
+        },
+        "stats": {
+            "cars_listed": {
+                "number": "1000+",
+                "label": "Premium Vehicles Listed"
+            },
+            "active_users": {
+                "number": "5000+",
+                "label": "Global Members"
+            },
+            "success_deals": {
+                "number": "2000+",
+                "label": "Successful Acquisitions"
+            },
+            "trusted_partners": {
+                "number": "50+",
+                "label": "International Partners"
+            }
+        },
+        "services": {
+            "import": {
+                "title": "Global Import Solutions",
+                "description": "Navigate international markets with confidence. Our expert team provides comprehensive import strategies with real-time market analytics and cost optimization."
+            },
+            "partnership": {
+                "title": "Elite Dealer Network",
+                "description": "Join our curated network of premium dealers. Access exclusive inventory and leverage our global presence for exponential growth."
+            },
+            "scheduling": {
+                "title": "Personalized Consultations",
+                "description": "Experience white-glove service with our dedicated automotive specialists. Schedule viewings on your terms, virtual or in-person."
+            },
+            "valuation": {
+                "title": "Precision Valuation",
+                "description": "Make informed decisions with our advanced market analysis tools. Get real-time valuations backed by global market data."
+            }
+        },
+        "why_choose_us": {
+            "title": "The CarVerse Advantage",
+            "features": {
+                "trusted_platform": {
+                    "title": "Global Trust Network",
+                    "description": "Every transaction is backed by our rigorous verification process and secure payment systems, ensuring peace of mind across borders."
+                },
+                "expert_knowledge": {
+                    "title": "Industry Mastery",
+                    "description": "Leverage decades of automotive expertise and market insights from our global network of specialists."
+                },
+                "support": {
+                    "title": "Dedicated Concierge",
+                    "description": "Your personal automotive concierge is available 24/7, ensuring a seamless experience from selection to delivery."
+                }
+            }
+        }
+    },
+    "testimonials": {
+        "section": {
+            "title": "What Our Customers Say",
+            "subtitle": "Real experiences from our valued customers"
+        },
+        "items": [
+            {
+                "content": "The car import process was incredibly smooth. The team guided me through every step, making what seemed complex very simple and straightforward. I couldn't be happier with my experience.",
+                "author": "Sarah Chen",
+                "role": "Product Manager at TechFlow",
+                "image_alt": "Sarah Chen's testimonial"
+            },
+            {
+                "content": "Found my dream car through this platform. The valuation tool was spot-on, and the purchase process was transparent. The team's dedication to customer satisfaction is truly remarkable.",
+                "author": "Michael Rodriguez",
+                "role": "Tech Executive",
+                "image_alt": "Michael Rodriguez's testimonial"
+            },
+            {
+                "content": "The partnership program exceeded our expectations. Our dealership has seen significant growth since joining. The platform's innovative features and user-friendly interface make it a joy to use.",
+                "author": "Emily Watson",
+                "role": "Car Dealer",
+                "image_alt": "Emily Watson's testimonial"
+            }
+        ],
+        "navigation": {
+            "previous": "Previous testimonial",
+            "next": "Next testimonial"
+        }
+    },
+    "trusted_brands": {
+        "section": {
+            "title": "A World of Trusted Brands",
+            "subtitle": "A seamless continuous ticker of trusted brand logos, showcasing the power of partnership with smooth scrolling and hover effects"
+        }
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions about our vehicles or services? We're here to help!",
+        "form": {
+            "fields": {
+                "name": "Name",
+                "email": "Email",
+                "phone": "Phone (optional)",
+                "subject": "Subject",
+                "message": "Message"
+            },
+            "buttons": {
+                "send": "Send Message",
+                "sending": "Sending..."
+            },
+            "validation": {
+                "name": {
+                    "required": "Please enter your name",
+                    "max_length": "Name must not exceed 100 characters"
+                },
+                "email": {
+                    "required": "Please enter your email address",
+                    "invalid": "Please enter a valid email address"
+                },
+                "phone": {
+                    "invalid": "Please enter a valid phone number"
+                },
+                "subject": {
+                    "required": "Please enter a subject",
+                    "max_length": "Subject must not exceed 200 characters"
+                },
+                "message": {
+                    "required": "Please enter your message",
+                    "max_length": "Message must not exceed 3000 characters"
+                },
+                "contact_purpose": {
+                    "invalid": "Please select a valid contact purpose"
+                }
+            }
+        },
+        "purposes": {
+            "general": {
+                "title": "General Inquiry",
+                "description": "Questions about our company or services"
+            },
+            "sales": {
+                "title": "Sales Inquiry",
+                "description": "Interest in purchasing or leasing vehicles"
+            },
+            "support": {
+                "title": "Customer Support",
+                "description": "Help with existing services or products"
+            },
+            "partnership": {
+                "title": "Business Partnership",
+                "description": "Collaboration and business opportunities"
+            }
+        },
+        "business_hours": {
+            "title": "Business Hours",
+            "status": {
+                "open": "Open Now",
+                "closed": "Closed"
+            },
+            "days": {
+                "monday": "Monday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday",
+                "thursday": "Thursday",
+                "friday": "Friday",
+                "saturday": "Saturday",
+                "sunday": "Sunday"
+            }
+        },
+        "quick_contact": {
+            "title": "Quick Contact",
+            "call_now": "Call Now",
+            "email_us": "Email Us"
+        },
+        "location": {
+            "title": "Location",
+            "get_directions": "Get Directions",
+            "copy_address": "Copy Address",
+            "address_copied": "Address copied to clipboard!"
+        },
+        "social": {
+            "title": "Connect With Us",
+            "platforms": {
+                "facebook": "Follow us on Facebook",
+                "twitter": "Follow us on Twitter",
+                "instagram": "Follow us on Instagram",
+                "linkedin": "Connect on LinkedIn"
+            }
+        },
+        "messages": {
+            "success": "Thank you for your message! We'll get back to you soon.",
+            "error": "Sorry, there was a problem sending your message. Please try again.",
+            "rate_limit": "Too many attempts. Please try again later.",
+            "system_error": "A system error occurred. Please try again later."
+        }
+    },
+    "footer": {
+        "sections": {
+            "about_services": "About & Services",
+            "quick_tools": "Quick Tools",
+            "car_services": "Car Services",
+            "stay_updated": "Stay Updated"
+        },
+        "links": {
+            "about_us": "About Us",
+            "import_services": "Import Services",
+            "partnership_options": "Partnership Options",
+            "consultation": "Consultation",
+            "import_calculator": "Import Calculator",
+            "feasibility_analysis": "Feasibility Analysis",
+            "partnership_calculator": "Partnership Calculator",
+            "schedule_meeting": "Schedule Meeting",
+            "featured_cars": "Featured Cars",
+            "search_cars": "Search Cars",
+            "add_listing": "Add Listing",
+            "my_favorites": "My Favorites"
+        },
+        "newsletter": {
+            "email_placeholder": "Enter your email",
+            "subscribe_button": "Subscribe to Newsletter"
+        },
+        "actions": {
+            "back_to_top": "Back to Top"
+        },
+        "copyright": "© {year} CarMarket. All rights reserved.",
+        "social": {
+            "facebook_aria": "Follow us on Facebook",
+            "twitter_aria": "Follow us on Twitter",
+            "whatsapp_aria": "Contact us on WhatsApp"
+        },
+        "brands": {
+            "toyota_alt": "Toyota",
+            "honda_alt": "Honda",
+            "mercedes_alt": "Mercedes"
+        }
+    },
+    "auth": {
+        "2fa": {
+            "setup": {
+                "title": "Two-Factor Authentication Setup",
+                "heading": "Two-Factor Authentication Setup",
+                "scan_qr": "1. Scan this QR code with your authenticator app",
+                "manual_code": "Manual entry code:",
+                "manual_hint": "If you can't scan the QR code, manually enter the code above in your authenticator app",
+                "enter_code": "2. Enter the 6-digit code shown in your app:",
+                "verification_code": "Verification Code",
+                "verify_button": "Verify and Enable 2FA",
+                "success": "2FA has been enabled successfully!",
+                "backup_codes": "Backup Codes",
+                "backup_instruction": "Save these backup codes in a secure place. Each code can only be used once.",
+                "download_codes": "Download Backup Codes",
+                "after_backup": "After saving your backup codes",
+                "continue": "Continue to Dashboard"
+            },
+            "verify": {
+                "title": "Verify Two-Factor Authentication",
+                "heading": "Two-Factor Authentication",
+                "instruction": "Enter the 6-digit code from your authenticator app",
+                "code_label": "Authentication Code",
+                "verify_button": "Verify",
+                "use_backup": "Use Backup Code Instead",
+                "errors": {
+                    "code_required": "Verification code is required",
+                    "invalid_code": "Invalid verification code"
+                }
+            }
+        },
+        "verification": {
+            "title": "Email Verification",
+            "check": {
+                "heading": "Email Verification",
+                "instruction": "Click below to verify your email:",
+                "verify_button": "Verify Email",
+                "link_label": "Link",
+                "no_link_error": "No verification link found. Please try registering again.",
+                "already_verified": "Already verified? You can proceed to login.",
+                "login_button": "Go to Login"
+            },
+            "success": {
+                "heading": "Email Verified Successfully!",
+                "message": "Your email has been verified. You can now login to your account.",
+                "login_button": "Login to Your Account"
+            },
+            "errors": {
+                "no_token": "No verification token provided",
+                "invalid_token": "Invalid verification token",
+                "verification_failed": "Failed to verify email"
+            }
+        },
+        "register": {
+            "title": "Register",
+            "heading": "Create Account",
+            "name_label": "Name",
+            "email_label": "Email",
+            "password_label": "Password",
+            "confirm_password_label": "Confirm Password",
+            "profile_image_label": "Profile Picture (Optional)",
+            "image_requirements": "Maximum size: 2MB. Supported formats: JPG, PNG",
+            "submit_button": "Register",
+            "login_link": "Already have an account? Login"
+        },
+        "errors": {
+            "token_missing": "Security token missing",
+            "invalid_token": "Invalid security token",
+            "login_required": "Please login to continue",
+            "access_denied": "Access denied. Please login first",
+            "all_fields_required": "All fields are required",
+            "passwords_mismatch": "Passwords do not match",
+            "invalid_image_type": "Invalid file type. Only JPG and PNG are allowed.",
+            "image_too_large": "File size too large. Maximum size is 2MB.",
+            "image_upload_failed": "Failed to upload profile image.",
+            "registration_failed": "Registration failed",
+            "404": {
+                "title": "404 - Page Not Found",
+                "heading": "Oops! Page Not Found",
+                "message": "You need to be logged in to access this page",
+                "back_home": "Back to Homepage"
+            },
+            "general": {
+                "something_wrong": "Something went wrong",
+                "try_again": "Please try again later",
+                "contact_support": "If the problem persists, please contact support"
+            },
+            "unauthorized": {
+                "title": "Unauthorized Access",
+                "message": "You need to be logged in to access this page",
+                "login_button": "Go to Login"
+            }
+        },
+        "success": {
+            "registration_complete": "Registration successful! Please verify your email."
+        },
+        "login": {
+            "title": "Login",
+            "heading": "Login to Your Account",
+            "email_label": "Email",
+            "password_label": "Password",
+            "submit_button": "Login",
+            "forgot_password_link": "Forgot Password?",
+            "register_link": "Need an account? Register",
+            "errors": {
+                "too_many_attempts": "Too many login attempts. Please try again after %s",
+                "fields_required": "Email and password are required",
+                "invalid_credentials": "Invalid email or password",
+                "user_not_found": "No user found with this email. Please register first.",
+                "invalid_credentials_warning": "Invalid email or password. WARNING: %d attempts remaining before account lockout",
+                "account_locked": "Account locked due to too many failed attempts. Please try again after %s"
+            }
+        }
+    }
+}

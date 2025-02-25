@@ -1,0 +1,46 @@
+Real World User Journey Map - Authentication Flow Plan
+
+1. Landing Experience
+Allow browsing without login
+Show limited car details
+Display registration benefits
+Strategic CTA placement
+
+graph TD
+    A[Landing Page] -->|Browse Cars| B[Limited View]
+    B -->|Try to Save/Contact| C[Registration Prompt]
+    C -->|Register| D[Quick Registration]
+    D -->|Verify Email| E[Basic Profile]
+    E -->|Optional| F[Complete Profile]
+
+
+4. User States
+Guest
+Registered (Basic)
+Email Verified
+Profile Completed
+Premium User
+
+
+5. Key Features by State
+Guest
+
+Browse listings
+Basic search
+View limited details
+Use basic calculator
+Basic User
+
+Save favorites
+Enhanced search
+Contact sellers
+View full details
+Verified User
+
+Schedule meetings
+Access premium features
+Special offers
+Detailed analytics
+
+
+

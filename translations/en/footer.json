@@ -1,0 +1,40 @@
+{
+    "sections": {
+        "about_services": "About & Services",
+        "quick_tools": "Quick Tools",
+        "car_services": "Car Services",
+        "stay_updated": "Stay Updated"
+    },
+    "links": {
+        "about_us": "About Us",
+        "import_services": "Import Services",
+        "partnership_options": "Partnership Options",
+        "consultation": "Consultation",
+        "import_calculator": "Import Calculator",
+        "feasibility_analysis": "Feasibility Analysis",
+        "partnership_calculator": "Partnership Calculator",
+        "schedule_meeting": "Schedule Meeting",
+        "featured_cars": "Featured Cars",
+        "search_cars": "Search Cars",
+        "add_listing": "Add Listing",
+        "my_favorites": "My Favorites"
+    },
+    "newsletter": {
+        "email_placeholder": "Enter your email",
+        "subscribe_button": "Subscribe to Newsletter"
+    },
+    "actions": {
+        "back_to_top": "Back to Top"
+    },
+    "copyright": "© {year} CarMarket. All rights reserved.",
+    "social": {
+        "facebook_aria": "Follow us on Facebook",
+        "twitter_aria": "Follow us on Twitter",
+        "whatsapp_aria": "Contact us on WhatsApp"
+    },
+    "brands": {
+        "toyota_alt": "Toyota",
+        "honda_alt": "Honda",
+        "mercedes_alt": "Mercedes"
+    }
+} 

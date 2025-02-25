@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /car-project/
+
+# API Routes
+RewriteRule ^api/calendar/slots$ public/api/calendar/slots.php [L]
+RewriteRule ^api/meetings/schedule$ public/api/meetings/schedule.php [L]
+RewriteRule ^api/meetings/user$ public/api/meetings/user.php [L]
+RewriteRule ^api/meetings/cancel$ public/api/meetings/cancel.php [L]
+
+# Allow direct access to PHP files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Handle 404s
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /car-project/public/404.php [L]
