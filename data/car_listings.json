@@ -184,6 +184,55 @@
             "id": "CAR67bb56a61444c",
             "created_at": "2025-02-23 17:11:02",
             "updated_at": "2025-02-23 17:11:02"
+        },
+        {
+            "title": "honda CR-V 2017",
+            "brand": "honda",
+            "model": "CR-V",
+            "year": 2017,
+            "mileage": 12000,
+            "price": 12000,
+            "body_type": "Sedan",
+            "transmission": "Manual",
+            "fuel_type": "Hybrid",
+            "color": "black",
+            "location": "japan",
+            "description": "\u3044\u3044\u306d",
+            "features": [
+                "ABS",
+                "Stability Control",
+                "Leather Seats",
+                "Power Windows",
+                "Navigation System",
+                "Android Auto"
+            ],
+            "specifications": {
+                "engine_size": "1300",
+                "horsepower": "1200",
+                "doors": "3",
+                "seats": "5"
+            },
+            "condition": "Good",
+            "contact_name": "CarVerse",
+            "contact_email": "carversedrivelink@gmail.com",
+            "contact_phone": "09898765421",
+            "contact_method": "both",
+            "warranty": true,
+            "negotiable": true,
+            "seller_notes": "",
+            "images": [
+                "car_67be9bc74319b.jpg",
+                "car_67be9bc7c2fa1.jpg",
+                "car_67be9bc8e6290.jpg",
+                "car_67be9bc9a01e3.jpg",
+                "car_67be9bca5867e.jpg",
+                "car_67be9bcb76205.jpg"
+            ],
+            "status": "active",
+            "user_id": 1,
+            "id": "CAR67be9bf89fb91",
+            "created_at": "2025-02-26 04:43:36",
+            "updated_at": "2025-02-26 04:43:36"
         }
     ]
 }
